@@ -9,8 +9,7 @@ using Microsoft.AspNet.FriendlyUrls.Resolvers;
 
 namespace Dispatch
 {
-    public partial class ViewSwitcher : System.Web.UI.UserControl
-    {
+    public partial class ViewSwitcher : UserControl {
         protected string CurrentView { get; private set; }
 
         protected string AlternateView { get; private set; }
