@@ -9,27 +9,19 @@ namespace Dispatch {
     public class BundleConfig {
         // Para obter mais informações sobre o Agrupamento, visite https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles) {
-            bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
-                            "~/Scripts/WebForms/WebForms.js",
-                            "~/Scripts/WebForms/WebUIValidation.js",
-                            "~/Scripts/WebForms/MenuStandards.js",
-                            "~/Scripts/WebForms/Focus.js",
-                            "~/Scripts/WebForms/GridView.js",
-                            "~/Scripts/WebForms/DetailsView.js",
-                            "~/Scripts/WebForms/TreeView.js",
-                            "~/Scripts/WebForms/WebParts.js"));
+            bundles.Add(new ScriptBundle("~/bundles/Js").Include(
+                            "~/Scripts/jquery-3.3.1.min.js",
+                            "~/Scripts/bootstrap.min.js",
+                            "~/Scripts/moment.min.js",
+                            "~/Scripts/Chart.min.js",
+                            "~/Scripts/tooplate-scripts.js"
+                            ).IncludeDirectory("~/Scripts",".js"));
 
-            // A ordem é muito importante para que esses arquivos funcionem; eles possuem dependências explícitas
-            bundles.Add(new ScriptBundle("~/bundles/MsAjaxJs").Include(
-                    "~/Scripts/WebForms/MsAjax/MicrosoftAjax.js",
-                    "~/Scripts/WebForms/MsAjax/MicrosoftAjaxApplicationServices.js",
-                    "~/Scripts/WebForms/MsAjax/MicrosoftAjaxTimer.js",
-                    "~/Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js"));
+            bundles.Add(new StyleBundle("~/bundles/Css").Include(
+                            "~/Content/bootstrap.min.css",
+                            "~/Content/templatemo-style.css"
+                            ).IncludeDirectory("~/Content", ".css"));
 
-            // Use a versão de Desenvolvimento do Modernizr para se desenvolver e aprender com ele. Em seguida, quando estiver
-            // pronto para a produção, utilize a ferramenta de build em https://modernizr.com para escolher somente os testes que precisa
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                            "~/Scripts/modernizr-*"));
         }
     }
 }

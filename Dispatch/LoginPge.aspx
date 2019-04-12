@@ -7,7 +7,7 @@
           <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
             <div class="row">
               <div class="col-12 text-center">
-                <h2 class="tm-block-title mb-4">Bem vindo Ao Sistema de Acompanhamento.</h2>
+                <h2 class="tm-block-title mb-4">Bem vindo Ao Dispatch.</h2>
                   <h3 class="tm-block-title mb-4"> Faça o Login</h3>
               </div>
             </div>

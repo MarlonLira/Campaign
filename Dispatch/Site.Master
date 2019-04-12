@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/templatemo-style.css">
-
+    
     <asp:PlaceHolder runat="server" ID="head">
+         <%: Scripts.Render("~/bundles/js") %>
+        <%: Scripts.Render("~/bundles/css") %>
     </asp:PlaceHolder>
+   
+
 </head>
 <body >
     <form runat="server">
@@ -72,14 +76,10 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="Views/Marketing/EmailPge.aspx">
-                          <i class="fas fa-shopping-cart"></i> Products
-                        </a>
+                          <asp:LinkButton class="nav-link" ID="lb_email" runat="server" OnClick="lb_email_Click"><i class="fas fa-shopping-cart"></i> Email </asp:LinkButton>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="Views/Alunos/PerfilPge.Aspx">
-                          <i class="far fa-user"></i> Perfil
-                        </a>
+                            <asp:LinkButton class="nav-link" ID="lb_perfil" runat="server" OnClick="lb_perfil_Click"><i class="far fa-user"></i> Perfil </asp:LinkButton>
                       </li>
                       <li class="nav-item dropdown">
                         <a
