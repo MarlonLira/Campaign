@@ -50,7 +50,6 @@ C:\Web\Campaign\Dispatch\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Web\Campaign\Dispatch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Web\Campaign\Dispatch\bin\pt-br\System.Web.Optimization.resources.dll
 C:\Web\Campaign\Dispatch\bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.csprojAssemblyReference.cache
 C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CoreCompileInputs.cache
 C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CopyComplete
 C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.dll

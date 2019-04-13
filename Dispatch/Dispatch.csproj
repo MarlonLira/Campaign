@@ -226,6 +226,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Context\ConnectDb.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,6 +237,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DbHelper.cs" />
+    <Compile Include="Helpers\Hlp.cs" />
     <Compile Include="LoginPge.aspx.cs">
       <DependentUpon>LoginPge.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

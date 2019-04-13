@@ -13,30 +13,30 @@ namespace Dispatch.Views.Marketing {
     public partial class EmailPge {
         
         /// <summary>
-        /// Controle tbl_control2.
+        /// Controle tbl_control.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbl_control2;
+        protected global::System.Web.UI.WebControls.Table tbl_control;
         
         /// <summary>
-        /// Controle tbr_control.
+        /// Controle btn_enviar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableRow tbr_control;
+        protected global::System.Web.UI.WebControls.Button btn_enviar;
         
         /// <summary>
-        /// Controle tbc_control.
+        /// Controle btn_carregar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableCell tbc_control;
+        protected global::System.Web.UI.WebControls.Button btn_carregar;
     }
 }

@@ -76,7 +76,7 @@
                         </div>
                       </li>
                       <li class="nav-item">
-                          <asp:LinkButton class="nav-link" ID="lb_email" runat="server" OnClick="lb_email_Click"><i class="fas fa-shopping-cart"></i> Email </asp:LinkButton>
+                          <asp:LinkButton class="nav-link" ID="lb_email" runat="server" OnClick="lb_email_Click"><i class="fas fa-envelope-square"></i> Email </asp:LinkButton>
                       </li>
                       <li class="nav-item">
                             <asp:LinkButton class="nav-link" ID="lb_perfil" runat="server" OnClick="lb_perfil_Click"><i class="far fa-user"></i> Perfil </asp:LinkButton>
@@ -111,7 +111,7 @@
             <footer class="tm-footer row tm-mt-small">
                 <div class="col-12 font-weight-light">
                     <p class="text-center text-white mb-0 px-4 small">
-                      Copyright &copy; <b>2018</b> All rights reserved. 
+                      Copyright &copy; <b>2019</b> All rights reserved. 
                     </p>
                 </div>
             </footer>
