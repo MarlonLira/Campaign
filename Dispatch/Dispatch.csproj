@@ -218,6 +218,8 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Marketing\EmailPge.aspx" />
+    <Content Include="Views\Marketing\MessagePge.aspx" />
+    <Content Include="Views\Marketing\WaitingPge.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -275,9 +277,24 @@
     <Compile Include="Views\Marketing\EmailPge.aspx.designer.cs">
       <DependentUpon>EmailPge.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Marketing\MessagePge.aspx.cs">
+      <DependentUpon>MessagePge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Marketing\MessagePge.aspx.designer.cs">
+      <DependentUpon>MessagePge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marketing\WaitingPge.aspx.cs">
+      <DependentUpon>WaitingPge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Marketing\WaitingPge.aspx.designer.cs">
+      <DependentUpon>WaitingPge.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Components\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

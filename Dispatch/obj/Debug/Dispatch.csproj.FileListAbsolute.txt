@@ -54,3 +54,4 @@ C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CoreCompileInputs.cache
 C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CopyComplete
 C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.dll
 C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.pdb
+C:\Web\Campaign\Dispatch\obj\Debug\Dispatch.csprojAssemblyReference.cache
