@@ -219,6 +219,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Marketing\EmailPge.aspx" />
     <Content Include="Views\Marketing\MessagePge.aspx" />
+    <Content Include="Views\Marketing\PrevizualizarPge.aspx" />
     <Content Include="Views\Marketing\WaitingPge.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -229,6 +230,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\ConnectDb.cs" />
+    <Compile Include="Controller\MessageCtrl.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -248,6 +250,7 @@
     <Compile Include="LoginPge.aspx.designer.cs">
       <DependentUpon>LoginPge.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\MessageMdl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -284,6 +287,13 @@
     <Compile Include="Views\Marketing\MessagePge.aspx.designer.cs">
       <DependentUpon>MessagePge.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Marketing\PrevizualizarPge.aspx.cs">
+      <DependentUpon>PrevizualizarPge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Marketing\PrevizualizarPge.aspx.designer.cs">
+      <DependentUpon>PrevizualizarPge.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Marketing\WaitingPge.aspx.cs">
       <DependentUpon>WaitingPge.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,7 +305,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Components\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
