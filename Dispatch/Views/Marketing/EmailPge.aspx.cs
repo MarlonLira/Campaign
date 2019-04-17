@@ -59,5 +59,6 @@ namespace Dispatch.Views.Marketing {
         protected void btn_enviar_Click(object sender, EventArgs e) {
             Response.Redirect("~/Views/Marketing/MessagePge.aspx", false);
         }
+
     }
 }

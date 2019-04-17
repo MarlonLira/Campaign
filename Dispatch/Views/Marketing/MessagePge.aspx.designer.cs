@@ -112,6 +112,15 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.Button btn_enviar;
         
         /// <summary>
+        /// Controle btn_visualizar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_visualizar;
+        
+        /// <summary>
         /// Controle btn_cancelar.
         /// </summary>
         /// <remarks>

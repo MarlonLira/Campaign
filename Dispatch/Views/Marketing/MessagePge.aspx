@@ -62,6 +62,7 @@
               </div>
               <div class="col-12">
                   <asp:Button ID="btn_enviar" runat="server" Text="Enviar" class="btn btn-primary btn-block text-uppercase" Onclick="btn_enviar_Click" />
+                  <asp:Button ID="btn_visualizar" runat="server" Text="Visualizar" class="btn btn-primary btn-block text-uppercase mb-3"  OnClick="btn_visualizar_Click"/>
                   <asp:Button ID="btn_cancelar" runat="server" Text="Cancelar" class="btn btn-primary btn-block text-uppercase" Onclick="btn_cancelar_Click" />
               </div>
                 
