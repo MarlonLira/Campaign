@@ -49,6 +49,42 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.TextBox txt_description;
         
         /// <summary>
+        /// Controle lbl_img.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_img;
+        
+        /// <summary>
+        /// Controle txt_img.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_img;
+        
+        /// <summary>
+        /// Controle lbl_link.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_link;
+        
+        /// <summary>
+        /// Controle txt_link.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_link;
+        
+        /// <summary>
         /// Controle lbl_category.
         /// </summary>
         /// <remarks>

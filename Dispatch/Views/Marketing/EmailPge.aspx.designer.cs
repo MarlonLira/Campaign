@@ -40,21 +40,48 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.Button btn_carregar;
         
         /// <summary>
-        /// Controle tbl_empresa.
+        /// Controle dd_unidades.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbl_empresa;
+        protected global::System.Web.UI.WebControls.DropDownList dd_unidades;
         
         /// <summary>
-        /// Controle thr_control.
+        /// Controle lbl_data_inicio.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TableHeaderRow thr_control;
+        protected global::System.Web.UI.WebControls.Label lbl_data_inicio;
+        
+        /// <summary>
+        /// Controle txt_data_inicial.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_data_inicial;
+        
+        /// <summary>
+        /// Controle lbl_data_final.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_data_final;
+        
+        /// <summary>
+        /// Controle txt_data_final.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_data_final;
     }
 }

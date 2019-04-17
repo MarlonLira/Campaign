@@ -1,0 +1,90 @@
+﻿using System;
+using System.Data;
+using System.Net;
+using System.Net.Mail;
+using System.Threading;
+
+namespace Dispatch.Helpers {
+    public class SendMail {
+
+        // Dados Servidor
+        String Host = "smtplw.com.br";
+        Int32 Port = 587;
+        String User = "vitoriag1";
+        String Pass = "AcYNvtHU9360";
+        String From = "mailing@hiacademia.com.br";
+        
+        // Dados Remetente
+         String Nome = "Hi Academia";
+         String Email = "mailing@hiacademia.com.br";
+         String Email_Contato = "contato@hiacademia.com.br";
+         String Subject = "";
+
+        //Dados Destinatario
+        String Destinatario_Nome = "";
+        String Destinatario_Email = "";
+
+        public void Init(DataTable Table, String Msg, String Subject) {
+
+            for (Int32 Cont = 0; Cont <= Table.Rows.Count; Cont++) {
+                Destinatario_Nome = Table.Rows[Cont]["nome"].ToString();
+                Destinatario_Email = Table.Rows[Cont]["email"].ToString();
+                this.Subject = Subject;
+                Thread.Sleep(3000);
+                
+
+                SendEmail(Msg);
+
+                if (Cont > 2)
+                    break;
+            }
+             
+        }
+
+
+        public void SendEmail(String Msg) {
+            //Mail = new MailMessage();
+
+            Hlp Hlp = new Hlp();
+            
+            String Obs = "";
+
+            using (SmtpClient Smtp = new SmtpClient()) {
+                String Body = "";
+                DataTable Table = new DataTable();
+                
+                try {
+                    
+                    //Config Servidor Email
+                    Smtp.Host = Host;
+                    Smtp.Port = Port;
+                    Smtp.EnableSsl = true;
+                    Smtp.UseDefaultCredentials = false;
+                    Smtp.Credentials = new NetworkCredential(User, Pass);
+
+                    Body = Hlp.MsgFormat(Msg, Destinatario_Nome, Email_Contato);
+
+                    using (MailMessage Mail = new MailMessage()) {
+                        //Armazenamento dos dados
+                        Mail.From = new MailAddress(From);
+                        Mail.To.Add(new MailAddress("marlon.lira@hiacademia.com.br"));
+                        //Mail.To.Add(new MailAddress("marlon.lira@hiacademia.com.br"));
+                        Mail.Subject = Subject;
+                        Mail.IsBodyHtml = true;
+                        Mail.Body = Body;
+
+                        Smtp.Send(Mail);
+
+                        //Table.Rows.Add(Destinatario.Nome, "ENVIADO", Destinatario.Email, Obs);
+                        Mail.Dispose();
+                        Smtp.Dispose();
+                    }
+                } catch (Exception e) {
+                    
+                }
+            }
+            
+            Obs = "";
+        }
+    }
+}

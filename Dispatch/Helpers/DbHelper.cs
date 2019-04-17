@@ -1,9 +1,6 @@
-﻿using Dispatch.Context;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
-using System.Linq;
-using System.Web;
+using Dispatch.Context;
 
 namespace Dispatch.Helpers {
     public class DbHelper {
@@ -25,7 +22,7 @@ namespace Dispatch.Helpers {
         }
 
 
-        /*
+        
         public DataTable DataWarden(String Script) {
             Con = new ConnectDb();
             Con.OpenConWarden();
@@ -36,6 +33,6 @@ namespace Dispatch.Helpers {
 
             return Table;
         }
-        */
+        
     }
 }

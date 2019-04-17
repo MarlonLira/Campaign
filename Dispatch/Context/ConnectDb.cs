@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 
 namespace Dispatch.Context {
     public class ConnectDb {
 
         // Conexão sql 
         public string CreateCon = ConfigurationManager.ConnectionStrings["gestor2"].ConnectionString;
+        public string CreateWardenCon = ConfigurationManager.ConnectionStrings["Campaign"].ConnectionString;
 
         public SqlConnection Con;
         public SqlCommand Cmd;
@@ -29,7 +26,7 @@ namespace Dispatch.Context {
         public void OpenConlocal() {
             Con = new SqlConnection(CreateCon2);
             Con.Open();
-        }
+        }*/
 
         public void OpenConWarden() {
             Con = new SqlConnection(CreateWardenCon);
@@ -38,7 +35,7 @@ namespace Dispatch.Context {
             Cmd.CommandTimeout = 600;
             Con.Open();
         }
-        */
+        
         public void OpenAdpter(string tabela) {
             Adapt = new SqlDataAdapter(tabela, Con);
             Adapt.SelectCommand.CommandTimeout = 600;

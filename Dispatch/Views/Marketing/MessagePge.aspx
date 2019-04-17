@@ -21,6 +21,14 @@
                       <asp:Label ID="lbl_description" runat="server" Text="Descrição" ForeColor="White"></asp:Label>
                       <asp:TextBox ID="txt_description" runat="server" class="form-control validate" rows="3" required TextMode="MultiLine"></asp:TextBox>
                   </div>
+                     <div class="form-group mb-3">
+                      <asp:Label ID="lbl_img" runat="server" Text="Link da Imagem" ForeColor="White"></asp:Label>
+                      <asp:TextBox ID="txt_img" runat="server" class="form-control validate" required></asp:TextBox>
+                  </div>
+                     <div class="form-group mb-3">
+                      <asp:Label ID="lbl_link" runat="server" Text="Link Redirecionado(Campanha)" ForeColor="White"></asp:Label>
+                      <asp:TextBox ID="txt_link" runat="server" class="form-control validate" required></asp:TextBox>
+                  </div>
                   <div class="form-group mb-3">
                     <asp:Label ID="lbl_category" runat="server" Text="Categoria" ForeColor="White"></asp:Label>
                       <asp:DropDownList ID="txt_category" runat="server" class="custom-select tm-select-accounts">
@@ -32,8 +40,8 @@
                       </asp:DropDownList>
 
                   </div>
-                  <div class="row">
-                        <div class="form-group mb-3 col-xs-14 col-sm-8">
+                  <!--<div class="row">
+                        <div class="form-group mb-3 col-xs-14 col-sm-8" >
                           <asp:Label ID="lbl_date" runat="server" Text="Data" ForeColor="White"></asp:Label>
                           <asp:TextBox ID="txt_date" runat="server" class="form-control validate" required TextMode="Date"></asp:TextBox>
                         </div>
@@ -41,7 +49,7 @@
                           <asp:Label ID="lbl_amount" runat="server" Text="Quantidade" ForeColor="White"></asp:Label>
                       <asp:TextBox ID="txt_amount" runat="server" class="form-control validate" required></asp:TextBox>
                         </div>
-                  </div>
+                  </div> -->
                   </form>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">

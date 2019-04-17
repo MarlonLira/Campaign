@@ -1,8 +1,5 @@
-﻿using Dispatch.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
+using Dispatch.Models;
 
 namespace Dispatch.Controller {
     public class MessageCtrl : MessageMdl{
@@ -27,10 +24,9 @@ namespace Dispatch.Controller {
                                 "<a href=\"http://www.hiportal.com.br/hiservice/webforms/unsubscribemailpge.aspx?mail={mail}\">link</a> para excluir seu e-mail&nbsp;da nossa lista.</span></center>";
         #endregion
 
-
         public String Pesquisar(String Tabela, Int32 Empresa_id, String DataInicial = "", String DataFinal = "", String Order = "") {
             //String Query = "SELECT * FROM FITNESS.VIW_" + Tabela;
-            String Query = "SELECT CONVERT(varchar(20), [nome]) AS NOME, [email], [tel_celular], Convert(varchar(10),[data_limite_acesso], 103) AS DATA FROM FITNESS.VIW_" + Tabela;
+            String Query = "SELECT CONVERT(varchar(20), [nome]) AS nome, [email], [tel_celular], Convert(varchar(10),[data_limite_acesso], 103) AS DATA FROM FITNESS.VIW_" + Tabela;
 
             if (Empresa_id.ToString().Length > 1) {
                 Query += " WHERE EMPRESA_GRUPO_ID = " + Empresa_id;
@@ -52,5 +48,6 @@ namespace Dispatch.Controller {
             }
             return Query;
         }
+
     }
 }

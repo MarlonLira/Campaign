@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Xml.Linq;
 using Dispatch.Controller;
 using Dispatch.Helpers;
 
@@ -13,7 +9,10 @@ namespace Dispatch.Views.Marketing {
     public partial class EmailPge : Page {
         protected void Page_Load(object sender, EventArgs e) {
 
-            
+            if (String.IsNullOrEmpty(txt_data_inicial.Text)) {
+                txt_data_inicial.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                txt_data_final.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            }
         }
 
         public void LoadTable() {
@@ -21,18 +20,25 @@ namespace Dispatch.Views.Marketing {
             DbHelper dbHelper = new DbHelper();
             TableRow[] Row;
             MessageCtrl messageCtrl = new MessageCtrl();
-            String[] Part = Hlp.EmpresaFind(tbl_empresa);
-            String [] Empresa_id = Part[0].Split('-');
-            //String Script = "SELECT TOP 10 convert(varchar(20), [nome]), [email], [tel_celular], Convert(varchar(10), Convert(date, [data_limite_acesso]))as data FROM FITNESS.TBL_ALUNO order by id desc";
+            String DataInicial = Hlp.DateFormat(txt_data_inicial.Text);
+            String DataFinal = Hlp.DateFormat(txt_data_final.Text);
+            
 
-            String Script2 = messageCtrl.Pesquisar("ALUNO", Convert.ToInt32(Empresa_id[0]), "2019-04-01", "2019-04-16");
+            try {
 
-            DataTable Table = dbHelper.DisplayData(Script2);
-           
-            Row = Hlp.TableLoad(Table);
-            tbl_control.Rows.AddRange(Row);
-            Session.Add("Table", Table);
+                String Part = dd_unidades.SelectedValue;
+                String[] Empresa_id = Part.Split('-');
+                String Script2 = messageCtrl.Pesquisar("ALUNO", Convert.ToInt32(Empresa_id[0]), DataInicial, DataFinal);
 
+                DataTable Table = dbHelper.DisplayData(Script2);
+
+                Row = Hlp.TableLoad(Table);
+                tbl_control.Rows.AddRange(Row);
+                Session.Add("Table", Table);
+
+            } catch (Exception Err) {
+
+            }
         }
 
         public void LoadTable2() {

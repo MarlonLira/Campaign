@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Web;
 using System.Web.UI.WebControls;
-using Dispatch.Views.Marketing;
 
 namespace Dispatch.Helpers {
     public class Hlp {
@@ -66,21 +62,14 @@ namespace Dispatch.Helpers {
                 dbHelper = new DbHelper();
                 //Table = new DataTable();
                 WebRow = new TableRow();
-                
 
                 WebRow2 = new String[Table.Rows.Count];
                 int count = 0;
                 foreach (TableRow Rows in Table.Rows) {
-
                     foreach (TableCell Cells in Rows.Cells) {
-
                             WebRow2[count] = Cells.Text;
-
                             count++;
-                        
                     }
-                    
-                    
                 }
 
 
@@ -93,20 +82,30 @@ namespace Dispatch.Helpers {
         }
 
         //Corrigir
-        public String MsgFormat(String CreateMsg, String UrlImg, String UrlCampanha, String Email ) {
+        public String MsgFormat(String CreateMsg, String UrlImg, String UrlCampanha, Boolean Init) {
             String Msg = CreateMsg;
             try {
-                String[] Nome = "".Split(' ');
-
-                Msg = Msg.Replace("{NOME}", RandomTalk(Nome[0]));
                 Msg = Msg.Replace("{URL_IMG}", UrlImg);
                 Msg = Msg.Replace("{URL_CAMPANHA}", UrlCampanha);
-                Msg = Msg.Replace("{RESPONDER_PARA}", Email);
                 Msg = Msg.Replace("{TEXTO_ESPECIAL}", "");
                 Msg = Msg.Replace("{TEXTO_LEGAL}", "");
 
             } catch (Exception e) {
                 
+            }
+            return Msg;
+        }
+
+        public String MsgFormat(String CreateMsg, String nome, String Email) {
+            String Msg = CreateMsg;
+            try {
+                String[] Nome = nome.Split(' ');
+                String SelectName = Nome[0];
+                Msg = Msg.Replace("{NOME}", RandomTalk(SelectName));
+                Msg = Msg.Replace("{RESPONDER_PARA}", Email);
+
+            } catch (Exception e) {
+
             }
             return Msg;
         }
@@ -117,7 +116,6 @@ namespace Dispatch.Helpers {
 
             String[] NomeFormat = Nome.Split(' ');
             TextFormat = Texto.Replace("{nome}", NomeFormat[0]);
-
 
             TextFormat = TextFormat.Replace("{hix}", "Texto fixo Hix");
             TextFormat = TextFormat.Replace("{hi}", "Texto fixo Hi");
@@ -135,58 +133,57 @@ namespace Dispatch.Helpers {
                 case 1: {
                         Talk = "Bom dia " + Nome + " Tudo bem com você ?";
                         break;
-                    }
+                }
                 case 2: {
                         Talk = "Olá tudo bem? " + Nome;
                         break;
-                    }
+                }
                 case 3: {
                         Talk = "Como vai? " + Nome;
                         break;
-                    }
+                }
                 case 4: {
                         Talk = "Olá " + Nome;
                         break;
-                    }
+                }
                 case 5: {
                         Talk = "Oi tudo bem? " + Nome;
                         break;
-                    }
+                }
                 case 6: {
                         Talk = "Olá, Como vai? " + Nome;
                         break;
-                    }
+                }
                 case 7: {
                         Talk = "Bom dia, Como vai? " + Nome;
                         break;
-                    }
+                }
                 case 8: {
                         Talk = "Tudo Bem? " + Nome;
                         break;
-                    }
+                }
                 case 9: {
                         Talk = "Olá " + Nome + " Como vai?";
                         break;
-                    }
+                }
                 case 10: {
                         Talk = "Olá " + Nome + " Tudo bem?";
                         break;
-                    }
+                }
                 case 11: {
                         Talk = Nome + " Como vai?";
                         break;
-                    }
+                }
                 case 12: {
                         Talk = "Olá " + Nome + " Tudo Bem com você?";
                         break;
-                    }
+                }
                 case 13: {
                         Talk = "Bom dia " + Nome + " Como vai? ";
                         break;
-                    }
+                }
 
             }
-
 
             return Talk;
         }
@@ -298,5 +295,19 @@ namespace Dispatch.Helpers {
 
             return Reg.IsMatch(Email);
         }
+
+        public DataTable CreateWaitingTable() {
+            DbHelper DbHlp = new DbHelper();
+            DataTable TableInit = new DataTable();
+            DataTable Table = new DataTable();
+            /*
+            TableInit = DbHlp.DataWarden();
+
+            Table.Rows.Add(Send.Destinatario.Nome, "FALHA", Send.Destinatario.Email + " ERRO", "EMAIL INVALIDO");*/
+
+            return Table;
+        }
+
     }
+
 }
