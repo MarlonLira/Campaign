@@ -16,7 +16,7 @@
                             <asp:TableCell Text ="ALUNO"></asp:TableCell>
                             <asp:TableCell Text ="EMAIL"></asp:TableCell>
                             <asp:TableCell Text ="TELEFONE"></asp:TableCell>
-                            <asp:TableCell Text ="DATA"></asp:TableCell>
+                            <asp:TableCell Text ="DATA" TYPE="DATE"></asp:TableCell>
                         </asp:TableHeaderRow>
                     </asp:Table>
                 </div>
@@ -29,35 +29,13 @@
           <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
             <h2 class="tm-block-title"> Filtro De Busca</h2>
             <div class="tm-product-table-container">
-              <table class="table tm-table-small tm-product-table">
-                <tbody>
-                  <tr>
-                    <td class="tm-product-name"> Hi Tamarineira</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"> Hi Espinheiro</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tm-product-name"> Hi Encruzilhada</td>
-                    <td class="text-center">
-                      <a href="#" class="tm-product-delete-link">
-                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <asp:Table ID="tbl_empresa" runat="server" class="table tm-table-small tm-product-table">
+                    <asp:TableHeaderRow ID="thr_control" >
+                        <asp:TableCell Text="01 - Hi Tamarineira"  class="tm-product-name" ></asp:TableCell>
+                    </asp:TableHeaderRow>
+                </asp:Table>
             </div>
+              
             <!-- table container -->
             <button class="btn btn-primary btn-block text-uppercase mb-3">
               Adicionar Filtro

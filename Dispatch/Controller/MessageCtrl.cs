@@ -27,5 +27,30 @@ namespace Dispatch.Controller {
                                 "<a href=\"http://www.hiportal.com.br/hiservice/webforms/unsubscribemailpge.aspx?mail={mail}\">link</a> para excluir seu e-mail&nbsp;da nossa lista.</span></center>";
         #endregion
 
+
+        public String Pesquisar(String Tabela, Int32 Empresa_id, String DataInicial = "", String DataFinal = "", String Order = "") {
+            //String Query = "SELECT * FROM FITNESS.VIW_" + Tabela;
+            String Query = "SELECT CONVERT(varchar(20), [nome]) AS NOME, [email], [tel_celular], Convert(varchar(10),[data_limite_acesso], 103) AS DATA FROM FITNESS.VIW_" + Tabela;
+
+            if (Empresa_id.ToString().Length > 1) {
+                Query += " WHERE EMPRESA_GRUPO_ID = " + Empresa_id;
+            }
+            if (Empresa_id.ToString().Length <= 1) {
+                Query += " WHERE EMPRESA_ID = " + Empresa_id;
+            }
+            if (!String.IsNullOrEmpty(DataInicial) && Tabela != "VISITANTE") {
+                Query += " AND DATA_VENCTO_PLANO BETWEEN" + "'" + DataInicial + "'" + " AND " + "'" + DataFinal + "'" + " AND EMAIL IS NOT NULL ";
+            }
+            if (!String.IsNullOrEmpty(DataInicial) && Tabela != "ALUNO") {
+                Query += " AND DATA_CADASTRO BETWEEN " + "'" + DataInicial + "'" + " AND " + "'" + DataFinal + "'" + " AND EMAIL IS NOT NULL ";
+            }
+            if (!String.IsNullOrEmpty(Order) && Tabela != "VISITANTE") {
+                Query += "ORDER BY DATA_VENCTO_PLANO " + Order;
+            }
+            if (!String.IsNullOrEmpty(Order) && Tabela != "ALUNO") {
+                Query += "ORDER BY DATA_CADASTRO " + Order;
+            }
+            return Query;
+        }
     }
 }

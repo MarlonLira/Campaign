@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
+using Dispatch.Controller;
 using Dispatch.Helpers;
 
 namespace Dispatch.Views.Marketing {
@@ -18,10 +20,18 @@ namespace Dispatch.Views.Marketing {
             Hlp Hlp = new Hlp();
             DbHelper dbHelper = new DbHelper();
             TableRow[] Row;
-            String Script = "SELECT TOP 10 convert(varchar(20), [nome]), [email], [tel_celular], Convert(varchar(10), Convert(date, [data_limite_acesso]))as data FROM FITNESS.TBL_ALUNO order by id desc";
+            MessageCtrl messageCtrl = new MessageCtrl();
+            String[] Part = Hlp.EmpresaFind(tbl_empresa);
+            String [] Empresa_id = Part[0].Split('-');
+            //String Script = "SELECT TOP 10 convert(varchar(20), [nome]), [email], [tel_celular], Convert(varchar(10), Convert(date, [data_limite_acesso]))as data FROM FITNESS.TBL_ALUNO order by id desc";
 
-            Row = Hlp.TableLoad(Script);
+            String Script2 = messageCtrl.Pesquisar("ALUNO", Convert.ToInt32(Empresa_id[0]), "2019-04-01", "2019-04-16");
+
+            DataTable Table = dbHelper.DisplayData(Script2);
+           
+            Row = Hlp.TableLoad(Table);
             tbl_control.Rows.AddRange(Row);
+            Session.Add("Table", Table);
 
         }
 

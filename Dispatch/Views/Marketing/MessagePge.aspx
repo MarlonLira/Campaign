@@ -25,6 +25,7 @@
                     <asp:Label ID="lbl_category" runat="server" Text="Categoria" ForeColor="White"></asp:Label>
                       <asp:DropDownList ID="txt_category" runat="server" class="custom-select tm-select-accounts">
                           <asp:ListItem Text="Selecione a Categoria"></asp:ListItem>
+                          <asp:ListItem Text="Hi Tamarineira" Value="1"></asp:ListItem>
                           <asp:ListItem Text="Email"></asp:ListItem>
                           <asp:ListItem Text="Whats"></asp:ListItem>
                           <asp:ListItem Text="Ambos"></asp:ListItem>

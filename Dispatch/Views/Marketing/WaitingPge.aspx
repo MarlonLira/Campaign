@@ -9,10 +9,10 @@
             <asp:Table ID="tbl_waiting" runat="server" class="table">
                 <asp:TableHeaderRow  CssClass="bg-dark">
                     <asp:TableCell Text ="ALUNO"></asp:TableCell>
-                    <asp:TableCell Text ="STATUS"></asp:TableCell>
                     <asp:TableCell Text ="EMAIL"></asp:TableCell>
                     <asp:TableCell Text ="TELEFONE"></asp:TableCell>
                     <asp:TableCell Text ="DATA"></asp:TableCell>
+                    <asp:TableCell Text ="STATUS"></asp:TableCell>
                 </asp:TableHeaderRow>
             </asp:Table>
         </div>

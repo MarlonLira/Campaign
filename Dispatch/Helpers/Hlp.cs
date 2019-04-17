@@ -5,27 +5,28 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI.WebControls;
+using Dispatch.Views.Marketing;
 
 namespace Dispatch.Helpers {
     public class Hlp {
 
-        public TableRow[] TableLoad(String Script) {
+        public TableRow[] TableLoad(DataTable Table) {
             Table WebTable;
             TableCell WebCell;
             TableRow WebRow;
             TableRow[] WebRow2;
-            DataTable Table;
+            //DataTable Table;
             DbHelper dbHelper;
             
             try {
 
                 WebTable = new Table();
                 dbHelper = new DbHelper();
-                Table = new DataTable();
+                //Table = new DataTable();
                 WebRow = new TableRow();
 
-                Table = dbHelper.DisplayData(Script);
-
+                //Table = dbHelper.DisplayData(Script);
+               
                 WebRow2 = new TableRow[Table.Rows.Count];
                 int count = 0;
                 foreach (DataRow Rows in Table.Rows) {
@@ -41,6 +42,45 @@ namespace Dispatch.Helpers {
                     WebRow2[count] = WebRow;
                     WebRow = new TableRow();
                     count++;
+                }
+
+
+            } catch (Exception Err) {
+                WebTable = null;
+                WebRow2 = null;
+            }
+
+            return WebRow2;
+        }
+
+        public String[] EmpresaFind(Table Table) {
+            Table WebTable;
+            TableRow WebRow;
+            String[] WebRow2;
+            //DataTable Table;
+            DbHelper dbHelper;
+
+            try {
+
+                WebTable = new Table();
+                dbHelper = new DbHelper();
+                //Table = new DataTable();
+                WebRow = new TableRow();
+                
+
+                WebRow2 = new String[Table.Rows.Count];
+                int count = 0;
+                foreach (TableRow Rows in Table.Rows) {
+
+                    foreach (TableCell Cells in Rows.Cells) {
+
+                            WebRow2[count] = Cells.Text;
+
+                            count++;
+                        
+                    }
+                    
+                    
                 }
 
 
