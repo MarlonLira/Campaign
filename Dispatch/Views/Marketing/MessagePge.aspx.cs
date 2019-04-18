@@ -25,8 +25,16 @@ namespace Dispatch.Views.Marketing {
             Texto = Hlp.MsgFormat(Texto, "Aluno", "contato@hiacademia.com.br");
 
             //adiciona item a sessão
+           /* btn_visualizar.Attributes.Add("target", "_blank");
+            btn_visualizar.Attributes.Add("onclick", "window.open('~/Views/Marketing/PrevizualizarPge.aspx');return false;");*/
+
             Session.Add("Texto", Texto);
-            Response.Redirect("~/Views/Marketing/PrevizualizarPge.aspx", false);
+            //Response.Redirect("~/Views/Marketing/PrevizualizarPge.aspx", false);
+            Response.Write("<script> window.open( '~/Views/Marketing/PrevizualizarPge.aspx' ); </script>");
+        }
+
+        public void OpenWindows() {
+
         }
 
         protected void btn_enviar_Click(object sender, EventArgs e) {

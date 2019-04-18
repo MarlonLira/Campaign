@@ -30,7 +30,7 @@
              <div>
               <nav class="navbar navbar-expand-xl">
                 <div class="container h-100">
-                  <a class="navbar-brand" href="index.html">
+                  <a class="navbar-brand">
                     <h1 class="tm-site-title mb-0">Dispatch</h1>
                   </a>
                   <button
@@ -79,7 +79,7 @@
                           <asp:LinkButton class="nav-link" ID="lb_email" runat="server" OnClick="lb_email_Click"><i class="fas fa-envelope-square"></i> Email </asp:LinkButton>
                       </li>
                       <li class="nav-item">
-                            <asp:LinkButton class="nav-link" ID="lb_perfil" runat="server" OnClick="lb_perfil_Click"><i class="far fa-user"></i> Perfil </asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="lb_perfil" runat="server"><i class="far fa-user"></i> Perfil </asp:LinkButton>
                       </li>
                       <li class="nav-item dropdown">
                         <a

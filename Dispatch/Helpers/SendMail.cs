@@ -26,28 +26,32 @@ namespace Dispatch.Helpers {
 
         public void Init(DataTable Table, String Msg, String Subject) {
 
+            String[] Operadores = new string[] { "Marlon|marlon.lira@hiacademia.com.br", "Ricardo|lrop@hotmail.com", "Newton|newtonvvf@hotmail.com" };
+
+            foreach (String Email in Operadores) {
+                String [] Part = Email.Split('|');
+                Destinatario_Nome = Part[0];
+                Destinatario_Email = Part[1];
+
+                SendEmail(Msg);
+
+                Thread.Sleep(3000);
+            }
+
             for (Int32 Cont = 0; Cont <= Table.Rows.Count; Cont++) {
                 Destinatario_Nome = Table.Rows[Cont]["nome"].ToString();
                 Destinatario_Email = Table.Rows[Cont]["email"].ToString();
                 this.Subject = Subject;
-                Thread.Sleep(3000);
-                
 
                 SendEmail(Msg);
 
-                if (Cont > 2)
-                    break;
+                Thread.Sleep(3000);
             }
-             
         }
 
-
         public void SendEmail(String Msg) {
-            //Mail = new MailMessage();
 
-            Hlp Hlp = new Hlp();
-            
-            String Obs = "";
+            Hlp Hlp = new Hlp();            
 
             using (SmtpClient Smtp = new SmtpClient()) {
                 String Body = "";
@@ -67,7 +71,7 @@ namespace Dispatch.Helpers {
                     using (MailMessage Mail = new MailMessage()) {
                         //Armazenamento dos dados
                         Mail.From = new MailAddress(From);
-                        Mail.To.Add(new MailAddress("marlon.lira@hiacademia.com.br"));
+                        Mail.To.Add(new MailAddress(Destinatario_Email));
                         //Mail.To.Add(new MailAddress("marlon.lira@hiacademia.com.br"));
                         Mail.Subject = Subject;
                         Mail.IsBodyHtml = true;
@@ -83,8 +87,6 @@ namespace Dispatch.Helpers {
                     
                 }
             }
-            
-            Obs = "";
         }
     }
 }

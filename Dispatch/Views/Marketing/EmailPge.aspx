@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmailPge.aspx.cs" 
     Inherits="Dispatch.Views.Marketing.EmailPge" %>
 <asp:Content ID="cttEmail" ContentPlaceHolderID="MainContent" runat="server">
-
-    <script src="../../Scripts/dataformat.js" type="text/javascript"></script></head>
+    
     <div class="container mt-5">
         
       <div class="row tm-content-row">
@@ -45,24 +44,27 @@
                     <asp:ListItem Text ="19 - Hix Ipsep" class="tm-product-name"></asp:ListItem>
                     <asp:ListItem Text ="24 - Hix Arruda" class="tm-product-name"></asp:ListItem>
                     <asp:ListItem Text ="502 - Grupo Hix" class="tm-product-name"></asp:ListItem>
-
+                </asp:DropDownList>
+                <br />
+                <asp:DropDownList ID="dd_destinatario" runat="server" class="table tm-table-small tm-product-table">
+                    <asp:ListItem Text ="ALUNO" class="tm-product-name"></asp:ListItem>
+                    <asp:ListItem Text ="VISITANTE" class="tm-product-name"></asp:ListItem>
+                    <asp:ListItem Text ="AMBOS" class="tm-product-name"></asp:ListItem>
                 </asp:DropDownList>
             </div>
                   <div class="tm-product-table-container">
                       
                       <asp:Label ID="lbl_data_inicio" runat="server" Text="Data Inicial" ></asp:Label>
                       <br />
-                      <asp:TextBox ID="txt_data_inicial" runat="server" Format="dd/MM/yyyy" placeholder="dd/MM/yyyy" onKeyPress="return formataData(this,event);"></asp:TextBox>
+                      <asp:TextBox ID="txt_data_inicial" runat="server" TextMode="Date"></asp:TextBox>
                   </div>
                 <div class="tm-product-table-container">
                   <asp:Label ID="lbl_data_final" runat="server" Text="Data Final"></asp:Label>
                     <br />
-                  <asp:TextBox ID="txt_data_final" runat="server" Format="dd/MM/yyyy" placeholder="dd/MM/yyyy" onKeyPress="return formataData(this,event);"></asp:TextBox>
+                  <asp:TextBox ID="txt_data_final" runat="server" TextMode="Date"></asp:TextBox>
                 </div>
             <!-- table container -->
-            <button class="btn btn-primary btn-block text-uppercase mb-3">
-              Adicionar Filtro
-            </button>
+              <asp:Button ID="btn_testar" class="btn btn-primary btn-block text-uppercase mb-3" runat="server" Text="Adicionar Filtro" enabled="false"/>
           </div>
         </div>
       </div>
