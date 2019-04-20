@@ -3,7 +3,16 @@ using System.Data;
 using System.Data.SqlClient;
 
 namespace Dispatch.Context {
-    public class ConnectDb {
+    public class ConnectDb : DbContext{
+
+
+	public ConnectDb()
+        : base("DataContext")
+        {
+
+        }
+        public DbSet<AlunoMdl> Alunos { get; set; }
+
 
         // Conexão sql 
         public string CreateCon = ConfigurationManager.ConnectionStrings["gestor2"].ConnectionString;
