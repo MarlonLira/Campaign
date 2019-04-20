@@ -1,18 +1,18 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.Entity;
+using Dispatch.Models;
 
 namespace Dispatch.Context {
     public class ConnectDb : DbContext{
 
-
-	public ConnectDb()
-        : base("DataContext")
-        {
+        //testar
+	    public ConnectDb()
+        : base("gestor2"){
 
         }
         public DbSet<AlunoMdl> Alunos { get; set; }
-
 
         // Conexão sql 
         public string CreateCon = ConfigurationManager.ConnectionStrings["gestor2"].ConnectionString;
