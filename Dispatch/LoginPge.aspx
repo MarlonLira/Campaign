@@ -16,26 +16,14 @@
                 <form action="index.html" method="post" class="tm-login-form">
                   <div class="form-group">
                     <label for="username">Login</label>
-                     <asp:TextBox ID="username" runat="server" class="form-control validate" required></asp:TextBox>
+                     <asp:TextBox ID="txt_user" runat="server" class="form-control validate" required></asp:TextBox>
                   </div>
                   <div class="form-group mt-3">
                     <label for="password">Senha</label>
-                    <input
-                      name="password"
-                      type="password"
-                      class="form-control validate"
-                      id="password"
-                      value=""
-                      required
-                    />
+                    <asp:TextBox ID="txt_pass" runat="server" class="form-control validate" required TextMode="Password"></asp:TextBox>
                   </div>
                   <div class="form-group mt-4">
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-block text-uppercase"
-                    >
-                      Confirmar
-                    </button>
+                      <asp:Button ID="btn_confirmar" runat="server" Text="Confirmar" class="btn btn-primary btn-block text-uppercase" OnClick="btn_confirmar_Click" />
                   </div>
                   <button class="mt-5 btn btn-primary btn-block text-uppercase">
                     Esqueceu sua senha?

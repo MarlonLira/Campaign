@@ -94,13 +94,13 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.Label lbl_category;
         
         /// <summary>
-        /// Controle txt_category.
+        /// Controle dd_category.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList txt_category;
+        protected global::System.Web.UI.WebControls.DropDownList dd_category;
         
         /// <summary>
         /// Controle lbl_date.

@@ -164,6 +164,7 @@
     <Content Include="img\notification-02.jpg" />
     <Content Include="img\notification-03.jpg" />
     <Content Include="img\product-image.jpg" />
+    <Content Include="InicioPge.aspx" />
     <Content Include="LoginPge.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -251,6 +252,13 @@
     <Compile Include="Helpers\DbHelper.cs" />
     <Compile Include="Helpers\Hlp.cs" />
     <Compile Include="Helpers\SendMail.cs" />
+    <Compile Include="InicioPge.aspx.cs">
+      <DependentUpon>InicioPge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioPge.aspx.designer.cs">
+      <DependentUpon>InicioPge.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginPge.aspx.cs">
       <DependentUpon>LoginPge.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -31,7 +31,7 @@
                   </div>
                   <div class="form-group mb-3">
                     <asp:Label ID="lbl_category" runat="server" Text="Categoria" ForeColor="White"></asp:Label>
-                      <asp:DropDownList ID="txt_category" runat="server" class="custom-select tm-select-accounts">
+                      <asp:DropDownList ID="dd_category" runat="server" class="custom-select tm-select-accounts">
                           <asp:ListItem Text="Selecione a Categoria"></asp:ListItem>
                           <asp:ListItem Text="Email"></asp:ListItem>
                           <asp:ListItem enabled="false" Text="Whats"></asp:ListItem>
@@ -51,7 +51,7 @@
                   </div> -->
                   </form>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+              <!--<div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
                 <div class="tm-product-img-dummy mx-auto">
                   <i
                     class="fas fa-cloud-upload-alt tm-upload-icon"
@@ -67,10 +67,10 @@
                     onclick="document.getElementById('fileInput').click();"
                   />
                 </div>
-              </div>
+              </div> -->
               <div class="col-12">
                   <asp:Button ID="btn_enviar" runat="server" Text="Enviar" class="btn btn-primary btn-block text-uppercase" Onclick="btn_enviar_Click" />
-                  <asp:Button ID="btn_visualizar" runat="server" Text="Visualizar" class="btn btn-primary btn-block text-uppercase mb-3"  OnClick="btn_visualizar_Click"/>
+                  <asp:Button ID="btn_visualizar" runat="server" Text="Visualizar" class="btn btn-primary btn-block text-uppercase mb-3"  OnClick="btn_visualizar_Click" Visible="false"/>
                   <asp:Button ID="btn_cancelar" runat="server" Text="Cancelar" class="btn btn-primary btn-block text-uppercase" Onclick="btn_cancelar_Click" />
               </div>
                 

@@ -55,3 +55,7 @@ C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Release\Dispatch.csproj.
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Release\Dispatch.csproj.CopyComplete
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Release\Dispatch.dll
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Release\Dispatch.pdb
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.dll
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.SqlServer.dll
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.xml
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.SqlServer.xml
