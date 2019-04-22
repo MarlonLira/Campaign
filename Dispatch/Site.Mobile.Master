@@ -2,22 +2,127 @@
 <%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html lang="pt-Br">
 <head runat="server">
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title><%: Page.Title %> - Dispatch</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/templatemo-style.css">
+    
+    <asp:PlaceHolder runat="server" ID="head">
+         <%: Scripts.Render("~/bundles/js") %>
+        <%: Scripts.Render("~/bundles/css") %>
+    </asp:PlaceHolder>
+   
+
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        <h1>Mobile Master Page</h1>
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-        </section>
-        <friendlyUrls:ViewSwitcher runat="server" />
-    </div>
+<body >
+    <form runat="server">
+
+             <div>
+              <nav class="navbar navbar-expand-xl">
+                <div class="container h-100">
+                  <a class="navbar-brand">
+                    <h1 class="tm-site-title mb-0">Dispatch</h1>
+                  </a>
+                  <button
+                    class="navbar-toggler ml-auto mr-0"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <i class="fas fa-bars tm-nav-icon"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto h-100">
+                      <li class="nav-item">
+                          <a>
+                            <asp:LinkButton ID="LinkButton1" runat="server" class="nav-link">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard
+                            </asp:LinkButton>
+                          
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="far fa-file-alt"></i>
+                          <span> Relatorios <i class="fas fa-angle-down"></i> </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Relatorio Diario</a>
+                          <a class="dropdown-item" href="#">Relatorio Semanal</a>
+                          <a class="dropdown-item" href="#">Relatorio Anual</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                          <asp:LinkButton class="nav-link" ID="lb_email" runat="server" OnClick="lb_email_Click"><i class="fas fa-envelope-square"></i> Email </asp:LinkButton>
+                      </li>
+                      <li class="nav-item">
+                            <asp:LinkButton class="nav-link" ID="lb_perfil" runat="server"><i class="far fa-user"></i> Perfil </asp:LinkButton>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <i class="fas fa-cog"></i>
+                          <span> Configurações <i class="fas fa-angle-down"></i> </span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Perfil</a>
+                          <a class="dropdown-item" href="#">Financeiro</a>
+                          <a class="dropdown-item" href="#">Customize</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer class="tm-footer row tm-mt-small">
+                <div class="col-12 font-weight-light">
+                    <p class="text-center text-white mb-0 px-4 small">
+                      Copyright &copy; <b>2019</b> All rights reserved. 
+                    </p>
+                </div>
+            </footer>
+
+        <script src="Scripts/jquery-3.3.1.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/moment.min.js"></script>
+        <script src="Scripts/Chart.min.js"></script>
+        <script src="Scripts/tooplate-scripts.js"></script>
+        
     </form>
 </body>
 </html>

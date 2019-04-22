@@ -112,3 +112,7 @@ C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.csproj.Co
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CopyComplete
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.dll
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.pdb
+C:\Web\Campaign\Dispatch\bin\EntityFramework.dll
+C:\Web\Campaign\Dispatch\bin\EntityFramework.SqlServer.dll
+C:\Web\Campaign\Dispatch\bin\EntityFramework.xml
+C:\Web\Campaign\Dispatch\bin\EntityFramework.SqlServer.xml
