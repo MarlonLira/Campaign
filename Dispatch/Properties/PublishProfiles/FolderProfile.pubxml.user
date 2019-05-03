@@ -22,10 +22,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="bin/Dispatch.dll">
-      <publishTime>04/22/2019 18:03:06</publishTime>
+      <publishTime>05/03/2019 17:03:40</publishTime>
     </File>
     <File Include="bin/Dispatch.pdb">
-      <publishTime>04/22/2019 18:03:06</publishTime>
+      <publishTime>05/03/2019 17:03:40</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -484,7 +484,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/22/2019 12:03:51</publishTime>
     </File>
     <File Include="Views/Marketing/MessagePge.aspx">
-      <publishTime>04/22/2019 11:07:00</publishTime>
+      <publishTime>05/03/2019 17:01:18</publishTime>
     </File>
     <File Include="Views/Marketing/PrevizualizarPge.aspx">
       <publishTime>04/17/2019 10:34:23</publishTime>
@@ -496,7 +496,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/22/2019 18:03:10</publishTime>
+      <publishTime>04/26/2019 14:20:19</publishTime>
     </File>
   </ItemGroup>
 </Project>

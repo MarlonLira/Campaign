@@ -51,7 +51,7 @@ namespace Dispatch.Views.Marketing {
 
                 Response.Redirect("~/Views/Marketing/WaitingPge.aspx", false);
             } catch (Exception Err) {
-
+                lbl_erro.Text = Err.Message + ' ' + Err.InnerException;
             }
         }
 

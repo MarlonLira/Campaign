@@ -116,3 +116,7 @@ C:\Web\Campaign\Dispatch\bin\EntityFramework.dll
 C:\Web\Campaign\Dispatch\bin\EntityFramework.SqlServer.dll
 C:\Web\Campaign\Dispatch\bin\EntityFramework.xml
 C:\Web\Campaign\Dispatch\bin\EntityFramework.SqlServer.xml
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.dll
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.SqlServer.dll
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.xml
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.SqlServer.xml

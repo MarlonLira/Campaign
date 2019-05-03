@@ -73,11 +73,12 @@
                   <asp:Button ID="btn_visualizar" runat="server" Text="Visualizar" class="btn btn-primary btn-block text-uppercase mb-3"  OnClick="btn_visualizar_Click" Visible="false"/>
                   <asp:Button ID="btn_cancelar" runat="server" Text="Cancelar" class="btn btn-primary btn-block text-uppercase" Onclick="btn_cancelar_Click" />
               </div>
+                <br />
+                <asp:Label ID="lbl_erro" runat="server" Text="" CssClass="alert" ForeColor="#990000" Font-Bold="True"></asp:Label>
                 
             </div>
           </div>
         </div>
       </div>
     </div>
-
 </asp:Content>
