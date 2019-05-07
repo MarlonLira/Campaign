@@ -1,7 +1,13 @@
 ﻿using System;
 using System.Data;
+using System.IO;
+using System.Net;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Web;
 using System.Web.UI.WebControls;
+using System.Xml;
 
 namespace Dispatch.Helpers {
     public class Hlp {
@@ -11,17 +17,13 @@ namespace Dispatch.Helpers {
             TableCell WebCell;
             TableRow WebRow;
             TableRow[] WebRow2;
-            //DataTable Table;
             DbHelper dbHelper;
             
             try {
 
                 WebTable = new Table();
                 dbHelper = new DbHelper();
-                //Table = new DataTable();
                 WebRow = new TableRow();
-
-                //Table = dbHelper.DisplayData(Script);
                
                 WebRow2 = new TableRow[Table.Rows.Count];
                 int count = 0;
@@ -39,8 +41,6 @@ namespace Dispatch.Helpers {
                     WebRow = new TableRow();
                     count++;
                 }
-
-
             } catch (Exception Err) {
                 WebTable = null;
                 WebRow2 = null;
@@ -53,14 +53,12 @@ namespace Dispatch.Helpers {
             Table WebTable;
             TableRow WebRow;
             String[] WebRow2;
-            //DataTable Table;
             DbHelper dbHelper;
 
             try {
 
                 WebTable = new Table();
                 dbHelper = new DbHelper();
-                //Table = new DataTable();
                 WebRow = new TableRow();
 
                 WebRow2 = new String[Table.Rows.Count];
@@ -209,9 +207,7 @@ namespace Dispatch.Helpers {
         }
 
         public String WhatsLinkGenerator(String Number, String Text) {
-            String WhatsLink = "https://api.whatsapp.com/send?phone=" + TelFormat(Number) + "&text=" + Text;
-
-            TelFormat(Number);
+            String WhatsLink = "https://api.whatsapp.com/send?phone=" + Number + "&text=" + Text;
 
             return WhatsLink;
         }
@@ -254,7 +250,7 @@ namespace Dispatch.Helpers {
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_recado"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_recado"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_residencia"].ToString())) {
-                    TelFound = Table.Rows[Cont]["tel_recado"].ToString();
+                    TelFound = Table.Rows[Cont]["tel_residencia"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_emergencia"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_emergencia"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_responsavel"].ToString())) {
@@ -270,7 +266,7 @@ namespace Dispatch.Helpers {
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_recado"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_recado"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_residencia"].ToString())) {
-                    TelFound = Table.Rows[Cont]["tel_recado"].ToString();
+                    TelFound = Table.Rows[Cont]["tel_residencia"].ToString();
                 } else {
                     TelFound = "";
                 }
@@ -306,6 +302,44 @@ namespace Dispatch.Helpers {
             Table.Rows.Add(Send.Destinatario.Nome, "FALHA", Send.Destinatario.Email + " ERRO", "EMAIL INVALIDO");*/
 
             return Table;
+        }
+
+        public void ThreadWait() {
+            Thread.Sleep(3000);
+        }
+
+
+        public String EncurtarLink(String urlOriginal) {
+
+            XmlDocument xmlDoc = new XmlDocument();        // O documento XML que será usado para tratar a reposta do servidor
+
+            //Faz uma solicitação ao bitly
+            WebRequest request = WebRequest.Create("http://api.bitly.com/v3/shorten");
+            //passa os dados do usuário, a chave da API e a url original
+            byte[] data = Encoding.UTF8.GetBytes(string.Format("login={0}&apiKey={1}&longUrl={2}&format={3}",
+                "hiacademia",                                     // seu nome de usuário na bitly
+                "R_0aeffa67b9c747eeb20fde762001cee7",                // sua chave para usar a API (API key)
+                HttpUtility.UrlEncode(urlOriginal),                 // Aplicar Encode na url que vamos encurtar
+                "xml"));                                            // O formato da resposta que desejamos que o servidor responda
+                                                                    //envia os dados via POST 
+            request.Method = "POST";
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = data.Length;
+            using (Stream ds = request.GetRequestStream()) {
+                ds.Write(data, 0, data.Length);
+            }
+
+            //lê o arquivo XML obtido so servidor
+            String Result = "";
+            using (WebResponse response = request.GetResponse()) {
+                using (StreamReader sr = new StreamReader(response.GetResponseStream())) {
+                    xmlDoc.LoadXml(sr.ReadToEnd());
+                    Result = xmlDoc.GetElementsByTagName("url")[0].InnerText;
+                }
+            }
+
+            return Result;
+
         }
 
     }

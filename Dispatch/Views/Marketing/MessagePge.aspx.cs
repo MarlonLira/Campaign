@@ -44,12 +44,19 @@ namespace Dispatch.Views.Marketing {
             DataTable Table = new DataTable();
             String Msg;
             try {
+
                 Table = (DataTable)Session["Table"];
-                Msg = Hlp.MsgFormat(Message.CreateMsg, txt_img.Text, txt_link.Text, true);
 
-                Mail.Init(Table, Msg, txt_title.Text);
+                if (dd_category.Text.ToUpper() == "EMAIL") {
+                    Msg = Hlp.MsgFormat(Message.CreateMsg, txt_img.Text, txt_link.Text, true);
 
-                Response.Redirect("~/Views/Marketing/WaitingPge.aspx", false);
+                    Mail.Init(Table, Msg, txt_title.Text);
+                }
+                else if (dd_category.Text.ToUpper() == "WHATSAPP") {
+                    Session.Add("Texto", txt_description.Text);
+                    Response.Redirect("~/Views/Marketing/WaitingPge.aspx", false);
+                }
+
             } catch (Exception Err) {
                 lbl_erro.Text = Err.Message + ' ' + Err.InnerException;
             }

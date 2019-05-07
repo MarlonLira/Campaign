@@ -20,5 +20,14 @@ namespace Dispatch.Views.Marketing {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table tbl_waiting;
+        
+        /// <summary>
+        /// Controle lbl_erro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_erro;
     }
 }

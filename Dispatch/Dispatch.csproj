@@ -253,6 +253,7 @@
     <Compile Include="Helpers\DbHelper.cs" />
     <Compile Include="Helpers\Hlp.cs" />
     <Compile Include="Helpers\SendMail.cs" />
+    <Compile Include="Helpers\SendWhats.cs" />
     <Compile Include="InicioPge.aspx.cs">
       <DependentUpon>InicioPge.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

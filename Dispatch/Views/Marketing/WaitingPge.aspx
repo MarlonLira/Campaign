@@ -11,10 +11,10 @@
                     <asp:TableCell Text ="ALUNO"></asp:TableCell>
                     <asp:TableCell Text ="EMAIL"></asp:TableCell>
                     <asp:TableCell Text ="TELEFONE"></asp:TableCell>
-                    <asp:TableCell Text ="DATA"></asp:TableCell>
-                    <asp:TableCell Text ="STATUS"></asp:TableCell>
+                    <asp:TableCell Text ="LINK"></asp:TableCell>
                 </asp:TableHeaderRow>
             </asp:Table>
+            <asp:Label ID="lbl_erro" runat="server" Text=""></asp:Label>
         </div>
     </div>
 </div>
