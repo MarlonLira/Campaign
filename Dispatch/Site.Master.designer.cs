@@ -22,6 +22,15 @@ namespace Dispatch {
         protected global::System.Web.UI.WebControls.PlaceHolder head;
         
         /// <summary>
+        /// Controle ScriptManager1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
         /// Controle LinkButton1.
         /// </summary>
         /// <remarks>

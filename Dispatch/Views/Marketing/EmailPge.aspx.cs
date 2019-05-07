@@ -47,6 +47,7 @@ namespace Dispatch.Views.Marketing {
         protected void btn_carregar_Click(object sender, EventArgs e) {
 
             try {
+                Session["Thread-New"] = null;
                 LoadTable();
             } catch (Exception Err) {
 

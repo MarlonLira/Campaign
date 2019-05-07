@@ -13,6 +13,15 @@ namespace Dispatch.Views.Marketing {
     public partial class WaitingPge {
         
         /// <summary>
+        /// Controle tmr_carga.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.Timer tmr_carga;
+        
+        /// <summary>
         /// Controle tbl_waiting.
         /// </summary>
         /// <remarks>

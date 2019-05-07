@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Threading;
 using System.Web.UI;
 using Dispatch.Controller;
 using Dispatch.Helpers;
@@ -53,7 +54,9 @@ namespace Dispatch.Views.Marketing {
                     Mail.Init(Table, Msg, txt_title.Text);
                 }
                 else if (dd_category.Text.ToUpper() == "WHATSAPP") {
+                    Session["Thread-New"] = true;
                     Session.Add("Texto", txt_description.Text);
+                    Session["TableInit"] = null;
                     Response.Redirect("~/Views/Marketing/WaitingPge.aspx", false);
                 }
 

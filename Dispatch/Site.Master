@@ -26,7 +26,7 @@
 </head>
 <body >
     <form runat="server">
-
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
              <div>
               <nav class="navbar navbar-expand-xl">
                 <div class="container h-100">

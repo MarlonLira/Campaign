@@ -15,6 +15,9 @@ namespace Dispatch.Views.Marketing {
                 Tcarregar.Name = "TLoadLink";
                 Tcarregar.Start();
             }
+            if (Session["ErroThread"] != null) {
+                lbl_erro.Text = Convert.ToString(Session["ErroThread"]);
+            }
         }
 
         DataTable TableInit = new DataTable();
@@ -25,7 +28,7 @@ namespace Dispatch.Views.Marketing {
            // Row = Hlp.TableLoad((DataTable)Session["Table"]);
 
             Row = Hlp.TableLoad(TableInit);
-            
+         
             if (Table == null) {
                 Session.Add("TableInit", TableInit);
             }
@@ -56,12 +59,18 @@ namespace Dispatch.Views.Marketing {
                 TableInit.Columns.Add("Link");
 
                 for (Count = 0; Count < Table.Rows.Count; Count ++) {
+
+                    if(Session["Thread-New"] == null) {
+                        break;
+                    }
+
                     Nome = Table.Rows[Count]["nome"].ToString();
                     Email = Table.Rows[Count]["email"].ToString();
                     Telefone = Hlp.TelFind(Table, "", Count);
                     Telefone = Hlp.TelFormat(Telefone);
                     
                     WhatsLink = Hlp.EncurtarLink(Hlp.WhatsLinkGenerator(Telefone, Hlp.WhatsMsgFormat(Texto, Nome)));
+                    WhatsLink = @"<a style='color: white;' target='_blank' href='" + WhatsLink + @"'>" + WhatsLink + @"</a>";
 
                     if (!String.IsNullOrEmpty(Telefone)) {
                         TableInit.Rows.Add(Nome, Email, Telefone, WhatsLink);
@@ -75,7 +84,7 @@ namespace Dispatch.Views.Marketing {
                     Count++;
                 }
             } catch (Exception Err) {
-                lbl_erro.Text = Err.Message + " " + Err.InnerException;
+                Session.Add("ErroThread", Err.Message + " " + Err.InnerException);
             }
 
         }
