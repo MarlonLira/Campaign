@@ -28,10 +28,10 @@ namespace Dispatch.Controller {
             //String Query = "SELECT * FROM FITNESS.VIW_" + Tabela;
             String Query = "SELECT CONVERT(varchar(20), [nome]) AS nome, [email], [tel_celular], Convert(varchar(10),[data_limite_acesso], 103) AS DATA FROM FITNESS.VIW_" + Tabela;
 
-            if (Empresa_id.ToString().Length > 1) {
+            if (Empresa_id.ToString().Length > 2) {
                 Query += " WHERE EMPRESA_GRUPO_ID = " + Empresa_id;
             }
-            if (Empresa_id.ToString().Length <= 1) {
+            if (Empresa_id.ToString().Length <= 2) {
                 Query += " WHERE EMPRESA_ID = " + Empresa_id;
             }
             if (!String.IsNullOrEmpty(DataInicial) && Tabela != "VISITANTE") {

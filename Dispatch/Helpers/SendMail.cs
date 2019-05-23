@@ -25,8 +25,10 @@ namespace Dispatch.Helpers {
         String Destinatario_Email = "";
 
         public void Init(DataTable Table, String Msg, String Subject) {
+            Int32 ContAux = 0;
 
             String[] Operadores = new string[] { "Marlon|marlonlira2@gmail.com", "Ricardo|lrop@hotmail.com", "Newton|newtonvvf@hotmail.com" };
+		    this.Subject = Subject;
 
             foreach (String Email in Operadores) {
                 String [] Part = Email.Split('|');
@@ -38,49 +40,63 @@ namespace Dispatch.Helpers {
                 Thread.Sleep(3000);
             }
 
-            for (Int32 Cont = 0; Cont <= Table.Rows.Count; Cont++) {
-                Destinatario_Nome = Table.Rows[Cont]["nome"].ToString();
-                Destinatario_Email = Table.Rows[Cont]["email"].ToString();
-                this.Subject = Subject;
+            if (ContAux < 1 ) {
+                for (int Cont = 0; Cont <= Table.Rows.Count; Cont++) {
+                    Destinatario_Nome = Table.Rows[Cont]["nome"].ToString();
+                    Destinatario_Email = Table.Rows[Cont]["email"].ToString();
+                    
+                    SendEmail(Msg);
 
-                SendEmail(Msg);
+                    Thread.Sleep(3000);
+                }
+            } else {
+                for (int Cont = ContAux; Cont <= Table.Rows.Count; Cont++) {
+                    Destinatario_Nome = Table.Rows[Cont]["nome"].ToString();
+                    Destinatario_Email = Table.Rows[Cont]["email"].ToString();
 
-                Thread.Sleep(3000);
+                    SendEmail(Msg);
+
+                    Thread.Sleep(3000);
+                }
             }
         }
 
         public void SendEmail(String Msg) {
 
-            Hlp Hlp = new Hlp();            
+            Hlp Hlp = new Hlp();
+            try {
+                using (SmtpClient Smtp = new SmtpClient()) {
+                    String Body = "";
+                    DataTable Table = new DataTable();
 
-            using (SmtpClient Smtp = new SmtpClient()) {
-                String Body = "";
-                DataTable Table = new DataTable();
-                    
-                //Config Servidor Email
-                Smtp.Host = Host;
-                Smtp.Port = Port;
-                Smtp.EnableSsl = true;
-                Smtp.UseDefaultCredentials = false;
-                Smtp.Credentials = new NetworkCredential(User, Pass);
+                    //Config Servidor Email
+                    Smtp.Host = Host;
+                    Smtp.Port = Port;
+                    Smtp.EnableSsl = true;
+                    Smtp.UseDefaultCredentials = false;
+                    Smtp.Credentials = new NetworkCredential(User, Pass);
 
-                Body = Hlp.MsgFormat(Msg, Destinatario_Nome, Email_Contato);
+                    Body = Hlp.MsgFormat(Msg, Destinatario_Nome, Email_Contato);
 
-                using (MailMessage Mail = new MailMessage()) {
-                    //Armazenamento dos dados
-                    Mail.From = new MailAddress(From);
-                    Mail.To.Add(new MailAddress(Destinatario_Email));
-                    //Mail.To.Add(new MailAddress("marlon.lira@hiacademia.com.br"));
-                    Mail.Subject = Subject;
-                    Mail.IsBodyHtml = true;
-                    Mail.Body = Body;
+                    using (MailMessage Mail = new MailMessage()) {
+                        //Armazenamento dos dados
+                        Mail.From = new MailAddress(From);
+                        Mail.To.Add(new MailAddress(Destinatario_Email));
+                        //Mail.To.Add(new MailAddress("marlon.lira@hiacademia.com.br"));
+                        Mail.Subject = Subject;
+                        Mail.IsBodyHtml = true;
+                        Mail.Body = Body;
 
-                    Smtp.Send(Mail);
+                        Smtp.Send(Mail);
 
-                    //Table.Rows.Add(Destinatario.Nome, "ENVIADO", Destinatario.Email, Obs);
-                    Mail.Dispose();
-                    Smtp.Dispose();
+                        //Table.Rows.Add(Destinatario.Nome, "ENVIADO", Destinatario.Email, Obs);
+                        Mail.Dispose();
+                        Smtp.Dispose();
+                    }
+
+
                 }
+            } catch (Exception Err) {
                 
             }
         }

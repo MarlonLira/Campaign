@@ -34,7 +34,7 @@
                       <asp:DropDownList ID="dd_category" runat="server" class="custom-select tm-select-accounts">
                           <asp:ListItem Text="Selecione a Categoria"></asp:ListItem>
                           <asp:ListItem Text="Email"></asp:ListItem>
-                          <asp:ListItem enabled="false" Text="Whats"></asp:ListItem>
+                          <asp:ListItem Text="WhatsApp"></asp:ListItem>
                           <asp:ListItem enabled="false" Text="Ambos"></asp:ListItem>
                       </asp:DropDownList>
 
