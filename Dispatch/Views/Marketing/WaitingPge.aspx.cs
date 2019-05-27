@@ -69,8 +69,8 @@ namespace Dispatch.Views.Marketing {
                     Telefone = Hlp.TelFind(Table, "", Count);
                     Telefone = Hlp.TelFormat(Telefone);
                     
-                    WhatsLink = Hlp.EncurtarLink(Hlp.WhatsLinkGenerator(Telefone, Hlp.WhatsMsgFormat(Texto, Nome)));
-                    WhatsLink = @"<a style='color: white;' target='_blank' href='" + WhatsLink + @"'>" + WhatsLink + @"</a>";
+                    WhatsLink = Hlp.WhatsLinkGenerator(Telefone, Hlp.WhatsMsgFormat(Texto, Nome));
+                    WhatsLink = @"<a style='color: white;' target='_blank' href='" + WhatsLink + @"'>" + "--> Clique aqui <--" + @"</a>";
 
                     if (!String.IsNullOrEmpty(Telefone)) {
                         TableInit.Rows.Add(Nome, Email, Telefone, WhatsLink);
