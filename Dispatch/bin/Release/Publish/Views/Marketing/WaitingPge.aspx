@@ -8,7 +8,7 @@
         <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-scroll">
             <asp:UpdatePanel>
                 <ContentTemplate>
-                    <asp:Timer ID="tmr_carga" Enabled ="true" Interval="5000" runat="server"></asp:Timer>
+                    <asp:Timer ID="tmr_carga" Enabled ="true" Interval="60000" runat="server"></asp:Timer>
                     <asp:Table ID="tbl_waiting" runat="server" class="table">
                         <asp:TableHeaderRow  CssClass="bg-dark">
                             <asp:TableCell Text ="ALUNO"></asp:TableCell>
