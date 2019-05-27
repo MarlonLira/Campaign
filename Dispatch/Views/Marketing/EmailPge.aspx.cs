@@ -11,6 +11,8 @@ namespace Dispatch.Views.Marketing {
             if (Convert.ToBoolean(Session["IsUser"]) != true) {
                 Response.Redirect("~/LoginPge.aspx", false);
             }
+
+            InitPage();
         }
 
         public void LoadTable() {
@@ -51,6 +53,13 @@ namespace Dispatch.Views.Marketing {
                 LoadTable();
             } catch (Exception Err) {
 
+            }
+        }
+
+        public void InitPage() {
+            if ((String)Session["User"] != "ADMIN") {
+                pnl_control.Enabled = false;
+                dd_unidades.SelectedValue = (String)Session["User"];
             }
         }
 

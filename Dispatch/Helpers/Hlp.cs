@@ -305,7 +305,7 @@ namespace Dispatch.Helpers {
         }
 
         public void ThreadWait() {
-            Thread.Sleep(3000);
+            Thread.Sleep(60000);
         }
 
 

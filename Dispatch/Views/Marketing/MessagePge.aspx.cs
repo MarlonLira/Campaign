@@ -9,12 +9,19 @@ namespace Dispatch.Views.Marketing {
     public partial class MessagePge : Page {
         public String Texto;
         protected void Page_Load(object sender, EventArgs e) {
-
+            InitPage();
         }
 
         protected void btn_cancelar_Click(object sender, EventArgs e) {
 
             Response.Redirect("~/Views/Marketing/EmailPge.aspx", false);
+        }
+
+        public void InitPage() {
+            if ((String)Session["User"] != "ADMIN") {
+                pnl_control.Enabled = false;
+                dd_category.SelectedValue = "2";
+            }
         }
 
         protected void btn_visualizar_Click(object sender, EventArgs e) {
