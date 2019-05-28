@@ -35,8 +35,6 @@ namespace Dispatch.Views.Marketing {
                     Table = dbHelper.DisplayData(Script2);
                 }
 
-                
-
                 Row = Hlp.TableLoad(Table);
                 tbl_control.Rows.AddRange(Row);
                 Session.Add("Table", Table);

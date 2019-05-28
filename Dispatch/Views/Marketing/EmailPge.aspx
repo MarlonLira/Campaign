@@ -14,7 +14,6 @@
                             <asp:TableCell Text ="ALUNO"></asp:TableCell>
                             <asp:TableCell Text ="EMAIL"></asp:TableCell>
                             <asp:TableCell Text ="TELEFONE"></asp:TableCell>
-                            <asp:TableCell Text ="DATA" TYPE="DATE"></asp:TableCell>
                         </asp:TableHeaderRow>
                     </asp:Table>
                 </div>

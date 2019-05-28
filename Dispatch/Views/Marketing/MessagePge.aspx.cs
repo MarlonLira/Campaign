@@ -21,6 +21,10 @@ namespace Dispatch.Views.Marketing {
             if ((String)Session["User"] != "ADMIN") {
                 pnl_control.Enabled = false;
                 dd_category.SelectedValue = "2";
+                lbl_title.Visible = false;
+                lbl_link.Visible = false;
+                lbl_img.Visible = false;
+                lbl_link.Visible = false;
             }
         }
 
