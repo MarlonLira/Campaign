@@ -94,6 +94,15 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.Label lbl_category;
         
         /// <summary>
+        /// Controle pnl_control.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnl_control;
+        
+        /// <summary>
         /// Controle dd_category.
         /// </summary>
         /// <remarks>
@@ -101,42 +110,6 @@ namespace Dispatch.Views.Marketing {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dd_category;
-        
-        /// <summary>
-        /// Controle lbl_date.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_date;
-        
-        /// <summary>
-        /// Controle txt_date.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_date;
-        
-        /// <summary>
-        /// Controle lbl_amount.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_amount;
-        
-        /// <summary>
-        /// Controle txt_amount.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_amount;
         
         /// <summary>
         /// Controle btn_enviar.

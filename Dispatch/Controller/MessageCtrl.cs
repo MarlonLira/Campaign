@@ -26,7 +26,7 @@ namespace Dispatch.Controller {
 
         public String Pesquisar(String Tabela, Int32 Empresa_id, String DataInicial = "", String DataFinal = "", String Order = "") {
             //String Query = "SELECT * FROM FITNESS.VIW_" + Tabela;
-            String Query = "SELECT CONVERT(varchar(20), [nome]) AS nome, [email], [tel_celular], Convert(varchar(10),[data_limite_acesso], 103) AS DATA FROM FITNESS.VIW_" + Tabela;
+            String Query = "SELECT CONVERT(varchar(20), [nome]) AS nome, [email], [tel_celular] FROM FITNESS.VIW_" + Tabela;
 
             if (Empresa_id.ToString().Length > 2) {
                 Query += " WHERE EMPRESA_GRUPO_ID = " + Empresa_id;
@@ -35,10 +35,10 @@ namespace Dispatch.Controller {
                 Query += " WHERE EMPRESA_ID = " + Empresa_id;
             }
             if (!String.IsNullOrEmpty(DataInicial) && Tabela != "VISITANTE") {
-                Query += " AND DATA_VENCTO_PLANO BETWEEN" + "'" + DataInicial + "'" + " AND " + "'" + DataFinal + "'" + " AND EMAIL IS NOT NULL ";
+                Query += " AND DATA_VENCTO_PLANO BETWEEN" + "'" + DataInicial + "'" + " AND " + "'" + DataFinal + "'";
             }
             if (!String.IsNullOrEmpty(DataInicial) && Tabela != "ALUNO") {
-                Query += " AND DATA_CADASTRO BETWEEN " + "'" + DataInicial + "'" + " AND " + "'" + DataFinal + "'" + " AND EMAIL IS NOT NULL ";
+                Query += " AND DATA_CADASTRO BETWEEN " + "'" + DataInicial + "'" + " AND " + "'" + DataFinal + "'";
             }
             if (!String.IsNullOrEmpty(Order) && Tabela != "VISITANTE") {
                 Query += "ORDER BY DATA_VENCTO_PLANO " + Order;

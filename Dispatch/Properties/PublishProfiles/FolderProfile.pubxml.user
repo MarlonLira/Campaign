@@ -22,10 +22,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="bin/Dispatch.dll">
-      <publishTime>05/27/2019 12:39:51</publishTime>
+      <publishTime>05/29/2019 11:00:32</publishTime>
     </File>
     <File Include="bin/Dispatch.pdb">
-      <publishTime>05/27/2019 12:39:51</publishTime>
+      <publishTime>05/29/2019 11:00:32</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -151,7 +151,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:25</publishTime>
     </File>
     <File Include="Bundle.config">
-      <publishTime>04/17/2019 10:34:22</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Content/all.css">
       <publishTime>04/17/2019 10:34:22</publishTime>
@@ -202,10 +202,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:22</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>04/18/2019 17:34:00</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>04/17/2019 10:34:23</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="fonts/fa-brands-400.eot">
       <publishTime>04/17/2019 10:34:23</publishTime>
@@ -268,7 +268,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>04/17/2019 10:34:23</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="img/arrow-down.png">
       <publishTime>04/17/2019 10:34:23</publishTime>
@@ -292,10 +292,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="InicioPge.aspx">
-      <publishTime>04/22/2019 12:30:36</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="LoginPge.aspx">
-      <publishTime>04/22/2019 12:28:07</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>04/17/2019 10:34:23</publishTime>
@@ -475,28 +475,28 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>05/07/2019 17:59:26</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
-      <publishTime>04/22/2019 10:52:02</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Views/Marketing/EmailPge.aspx">
-      <publishTime>04/22/2019 12:03:51</publishTime>
+      <publishTime>05/29/2019 10:50:47</publishTime>
     </File>
     <File Include="Views/Marketing/MessagePge.aspx">
-      <publishTime>05/06/2019 10:51:09</publishTime>
+      <publishTime>05/29/2019 10:51:31</publishTime>
     </File>
     <File Include="Views/Marketing/PrevizualizarPge.aspx">
-      <publishTime>04/17/2019 10:34:23</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Views/Marketing/WaitingPge.aspx">
-      <publishTime>05/27/2019 12:30:06</publishTime>
+      <publishTime>05/29/2019 10:26:40</publishTime>
     </File>
     <File Include="ViewSwitcher.ascx">
-      <publishTime>04/17/2019 10:34:23</publishTime>
+      <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/23/2019 12:14:35</publishTime>
+      <publishTime>05/28/2019 13:33:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

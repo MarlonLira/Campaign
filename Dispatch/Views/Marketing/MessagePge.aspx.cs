@@ -9,12 +9,27 @@ namespace Dispatch.Views.Marketing {
     public partial class MessagePge : Page {
         public String Texto;
         protected void Page_Load(object sender, EventArgs e) {
-
+            InitPage();
         }
 
         protected void btn_cancelar_Click(object sender, EventArgs e) {
 
             Response.Redirect("~/Views/Marketing/EmailPge.aspx", false);
+        }
+
+        public void InitPage() {
+            if ((String)Session["User"] != "ADMIN") {
+                pnl_control.Enabled = false;
+                dd_category.SelectedValue = "2";
+                lbl_title.Visible = false;
+                txt_title.Visible = false;
+                lbl_link.Visible = false;
+                txt_link.Visible = false;
+                lbl_img.Visible = false;
+                txt_img.Visible = false;
+                lbl_link.Visible = false;
+                txt_link.Visible = false;
+            }
         }
 
         protected void btn_visualizar_Click(object sender, EventArgs e) {
@@ -48,12 +63,12 @@ namespace Dispatch.Views.Marketing {
 
                 Table = (DataTable)Session["Table"];
 
-                if (dd_category.Text.ToUpper() == "EMAIL") {
+                if (dd_category.Text.ToUpper() == "EMAIL" || dd_category.Text.ToUpper() == "1") {
                     Msg = Hlp.MsgFormat(Message.CreateMsg, txt_img.Text, txt_link.Text, true);
 
                     Mail.Init(Table, Msg, txt_title.Text);
                 }
-                else if (dd_category.Text.ToUpper() == "WHATSAPP") {
+                else if (dd_category.Text.ToUpper() == "WHATSAPP" || dd_category.Text.ToUpper() == "2") {
                     Session["Thread-New"] = true;
                     Session.Add("Texto", txt_description.Text);
                     Session["TableInit"] = null;

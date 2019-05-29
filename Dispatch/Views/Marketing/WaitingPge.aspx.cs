@@ -48,7 +48,9 @@ namespace Dispatch.Views.Marketing {
             String Telefone;
             String WhatsLink;
             String Texto;
-            
+            String Cb = @"<a scope='row'><input type='checkbox' /></a>";
+
+
             try {
                 Table = (DataTable)Session["Table"];
                 Texto = (String)Session["Texto"];
@@ -57,6 +59,7 @@ namespace Dispatch.Views.Marketing {
                 TableInit.Columns.Add("Email");
                 TableInit.Columns.Add("Telefone");
                 TableInit.Columns.Add("Link");
+                TableInit.Columns.Add("Check");
 
                 for (Count = 0; Count < Table.Rows.Count; Count ++) {
 
@@ -70,13 +73,14 @@ namespace Dispatch.Views.Marketing {
                     Telefone = Hlp.TelFormat(Telefone);
                     
                     WhatsLink = Hlp.WhatsLinkGenerator(Telefone, Hlp.WhatsMsgFormat(Texto, Nome));
+
                     WhatsLink = @"<a style='color: white;' target='_blank' href='" + WhatsLink + @"'>" + "--> Clique aqui <--" + @"</a>";
 
                     if (!String.IsNullOrEmpty(Telefone)) {
-                        TableInit.Rows.Add(Nome, Email, Telefone, WhatsLink);
+                        TableInit.Rows.Add(Nome, Email, Telefone, WhatsLink, Cb);
 
                     } else {
-                        TableInit.Rows.Add(Nome, Email, "Inválido", "Erro ao tentar gerar o Link");
+                        TableInit.Rows.Add(Nome, Email, "Inválido", "Erro ao tentar gerar o Link", Cb);
                     }
 
                     Preencher();

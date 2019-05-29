@@ -247,7 +247,7 @@ namespace Dispatch.Helpers {
             if (Tabela == "ALUNO") {
                 if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_celular"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_celular"].ToString();
-                } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_recado"].ToString())) {
+                } /*else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_recado"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_recado"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_residencia"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_residencia"].ToString();
@@ -257,17 +257,17 @@ namespace Dispatch.Helpers {
                     TelFound = Table.Rows[Cont]["tel_responsavel"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_celular_responsavel"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_celular_responsavel"].ToString();
-                } else {
+                }*/ else {
                     TelFound = "";
                 }
             } else {
                 if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_celular"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_celular"].ToString();
-                } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_recado"].ToString())) {
+                } /*else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_recado"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_recado"].ToString();
                 } else if (!String.IsNullOrEmpty(Table.Rows[Cont]["tel_residencia"].ToString())) {
                     TelFound = Table.Rows[Cont]["tel_residencia"].ToString();
-                } else {
+                }*/ else {
                     TelFound = "";
                 }
 
@@ -305,7 +305,7 @@ namespace Dispatch.Helpers {
         }
 
         public void ThreadWait() {
-            Thread.Sleep(60000);
+            Thread.Sleep(20000);
         }
 
 
