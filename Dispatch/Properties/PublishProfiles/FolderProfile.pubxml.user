@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Dispatch.dll">
+      <publishTime>06/03/2019 12:59:39</publishTime>
+    </File>
+    <File Include="bin/Dispatch.pdb">
+      <publishTime>06/03/2019 12:59:39</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/17/2019 10:34:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/17/2019 10:34:24</publishTime>
+    </File>
+    <File Include="bin/pt-br/Microsoft.AspNet.FriendlyUrls.resources.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Optimization.resources.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>04/17/2019 10:34:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>04/17/2019 10:34:25</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="Content/all.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/all.min.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/brands.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/brands.min.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/fontawesome.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/fontawesome.min.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Content/templatemo-style.css">
+      <publishTime>04/17/2019 10:34:22</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="fonts/fa-brands-400.eot">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-brands-400.svg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-brands-400.ttf">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-brands-400.woff">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-brands-400.woff2">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-regular-400.eot">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-regular-400.svg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-regular-400.ttf">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-regular-400.woff">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-regular-400.woff2">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-solid-900.eot">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-solid-900.svg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-solid-900.ttf">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-solid-900.woff">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/fa-solid-900.woff2">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="img/arrow-down.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="img/avatar.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="img/check-mark.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="img/notification-01.jpg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="img/notification-02.jpg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="img/notification-03.jpg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="img/product-image.jpg">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="InicioPge.aspx">
+      <publishTime>06/03/2019 09:47:44</publishTime>
+    </File>
+    <File Include="LoginPge.aspx">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/Chart.min.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/AUTHORS.txt">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/external/jquery/jquery.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-bg_glass_75_d0e5f5_1x400.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-bg_glass_85_dfeffc_1x400.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_217bc0_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_469bdd_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_6da8d5_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_d8e7f3_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/images/ui-icons_f9bd01_256x240.png">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/index.html">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.css">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.min.css">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.min.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.structure.css">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.structure.min.css">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.theme.css">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/jquery-ui.theme.min.css">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/LICENSE.txt">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-datepicker/package.json">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/moment.min.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/tooplate-scripts.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>04/17/2019 10:34:23</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>06/03/2019 12:01:14</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="Views/Marketing/EmailPge.aspx">
+      <publishTime>06/03/2019 12:58:44</publishTime>
+    </File>
+    <File Include="Views/Marketing/MessagePge.aspx">
+      <publishTime>06/03/2019 12:05:57</publishTime>
+    </File>
+    <File Include="Views/Marketing/PrevizualizarPge.aspx">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="Views/Marketing/SmsPge.aspx">
+      <publishTime>06/03/2019 11:30:26</publishTime>
+    </File>
+    <File Include="Views/Marketing/WaitingPge.aspx">
+      <publishTime>06/03/2019 10:49:38</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>05/27/2019 21:03:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/28/2019 13:33:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
