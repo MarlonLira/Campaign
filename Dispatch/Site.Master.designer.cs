@@ -58,6 +58,15 @@ namespace Dispatch {
         protected global::System.Web.UI.WebControls.LinkButton lb_perfil;
         
         /// <summary>
+        /// Controle lbtn_sair.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtn_sair;
+        
+        /// <summary>
         /// Controle MainContent.
         /// </summary>
         /// <remarks>

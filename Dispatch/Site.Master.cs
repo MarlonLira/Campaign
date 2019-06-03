@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Dispatch {
     public partial class SiteMaster : MasterPage {
@@ -20,6 +16,11 @@ namespace Dispatch {
         }
 
         protected void lb_perfil_Click(object sender, EventArgs e) {
+            Response.Redirect("~/LoginPge.aspx", false);
+        }
+
+        protected void lbtn_sair_Click(object sender, EventArgs e) {
+            Session.Abandon();
             Response.Redirect("~/LoginPge.aspx", false);
         }
     }

@@ -22,10 +22,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="bin/Dispatch.dll">
-      <publishTime>05/29/2019 11:00:32</publishTime>
+      <publishTime>06/03/2019 12:59:39</publishTime>
     </File>
     <File Include="bin/Dispatch.pdb">
-      <publishTime>05/29/2019 11:00:32</publishTime>
+      <publishTime>06/03/2019 12:59:39</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -292,7 +292,7 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="InicioPge.aspx">
-      <publishTime>05/27/2019 21:03:20</publishTime>
+      <publishTime>06/03/2019 09:47:44</publishTime>
     </File>
     <File Include="LoginPge.aspx">
       <publishTime>05/27/2019 21:03:20</publishTime>
@@ -475,22 +475,25 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>04/17/2019 10:34:23</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>05/27/2019 21:03:20</publishTime>
+      <publishTime>06/03/2019 12:01:14</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
     <File Include="Views/Marketing/EmailPge.aspx">
-      <publishTime>05/29/2019 10:50:47</publishTime>
+      <publishTime>06/03/2019 12:58:44</publishTime>
     </File>
     <File Include="Views/Marketing/MessagePge.aspx">
-      <publishTime>05/29/2019 10:51:31</publishTime>
+      <publishTime>06/03/2019 12:05:57</publishTime>
     </File>
     <File Include="Views/Marketing/PrevizualizarPge.aspx">
       <publishTime>05/27/2019 21:03:20</publishTime>
     </File>
+    <File Include="Views/Marketing/SmsPge.aspx">
+      <publishTime>06/03/2019 11:30:26</publishTime>
+    </File>
     <File Include="Views/Marketing/WaitingPge.aspx">
-      <publishTime>05/29/2019 10:26:40</publishTime>
+      <publishTime>06/03/2019 10:49:38</publishTime>
     </File>
     <File Include="ViewSwitcher.ascx">
       <publishTime>05/27/2019 21:03:20</publishTime>

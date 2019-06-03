@@ -241,6 +241,36 @@ namespace Dispatch.Helpers {
             return Tel;
         }
 
+        public String TelFormat(String Telefone, Boolean IsCountryCode) {
+            String Tel = "";
+
+            if (!IsCountryCode) {
+                if (Telefone.Length == 11 && Int32.Parse(Telefone.Substring(0, 1)) == 8 && Int32.Parse(Telefone.Substring(1, 1)) == 1) {
+                    Tel = Telefone;
+                } else if (Telefone.Length == 10 && Int32.Parse(Telefone.Substring(0, 1)) == 1) {
+                    Tel = "8" + Telefone;
+                } else if (Telefone.Length == 9 && Int32.Parse(Telefone.Substring(0, 1)) == 9) {
+                    Tel = "81" + Telefone;
+                } else if (Telefone.Length == 8 && Int32.Parse(Telefone.Substring(0, 1)) == 9 || Int32.Parse(Telefone.Substring(0, 1)) == 8) {
+                    Tel = "819" + Telefone;
+                } else if ((Telefone.Length == 9) && (Int32.Parse(Telefone.Substring(0, 1)) == 1 && Int32.Parse(Telefone.Substring(1, 1)) == 9 || Int32.Parse(Telefone.Substring(1, 1)) == 8)) {
+                    for (int x = 0; x <= 8; x++) {
+                        if (x == 0) { Tel = "819"; } else { Tel += Telefone[x]; }
+                    }
+                } else if ((Telefone.Length == 10) && (Int32.Parse(Telefone.Substring(0, 1)) == 8 && Int32.Parse(Telefone.Substring(1, 1)) == 1 && (Int32.Parse(Telefone.Substring(2, 1)) == 8 || Int32.Parse(Telefone.Substring(2, 1)) == 9))) {
+                    for (int x = 0; x <= 9; x++) {
+                        if (x == 0 || x == 1) { Tel = "819"; } else { Tel += Telefone[x]; }
+                    }
+                } else {
+                    Tel = "";
+                }
+
+                if (Tel.Length > 13 || Tel.Length < 13) { Tel = ""; }
+            }
+
+            return Tel;
+        }
+
         public String TelFind(DataTable Table, String Tabela, Int32 Cont) {
             String TelFound = "";
 
@@ -340,6 +370,22 @@ namespace Dispatch.Helpers {
 
             return Result;
 
+        }
+
+        public String RandomIdGenerator() {
+            String Id = "";
+            String Rd = "";
+
+            try {
+                Rd = Guid.NewGuid().ToString();
+
+                Id = "msg-" + RandomNumber(0, 99) + "-" + Rd;
+
+                return Id;
+            } finally {
+                Id = "";
+                Rd = "";
+            }
         }
 
     }

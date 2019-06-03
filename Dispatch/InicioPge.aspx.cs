@@ -6,6 +6,10 @@ namespace Dispatch {
             if (Convert.ToBoolean(Session["IsUser"]) != true) {
                 Response.Redirect("~/LoginPge.aspx", false);
             }
+
+            if (Session["Err"] != null) {
+                lbl_erro.Text = (String)Session["Err"];
+            }
         }
     }
 }

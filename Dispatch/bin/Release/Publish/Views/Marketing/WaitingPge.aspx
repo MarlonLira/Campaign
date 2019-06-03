@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WaitingPge.aspx.cs" Inherits="Dispatch.Views.Marketing.WaitingPge" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="ctt_waiting" ContentPlaceHolderID="MainContent" runat="server">
     
 <div class="container mt-5">
     <h2 class="tm-block-title">Lista de Envio</h2>
@@ -10,7 +10,7 @@
                 <ContentTemplate>
                     <asp:Timer ID="tmr_carga" Enabled ="true" Interval="15000" runat="server"></asp:Timer>
                     <asp:Table ID="tbl_waiting" runat="server" class="table">
-                        <asp:TableHeaderRow  CssClass="bg-dark">
+                        <asp:TableHeaderRow CssClass="bg-dark">
                             <asp:TableCell Text ="ALUNO"></asp:TableCell>
                             <asp:TableCell Text ="EMAIL"></asp:TableCell>
                             <asp:TableCell Text ="TELEFONE"></asp:TableCell>

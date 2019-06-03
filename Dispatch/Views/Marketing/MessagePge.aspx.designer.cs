@@ -85,31 +85,31 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.TextBox txt_link;
         
         /// <summary>
-        /// Controle lbl_category.
+        /// Controle pnl_number_sms.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_category;
+        protected global::System.Web.UI.WebControls.Panel pnl_number_sms;
         
         /// <summary>
-        /// Controle pnl_control.
+        /// Controle lbl_quantidade.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnl_control;
+        protected global::System.Web.UI.WebControls.Label lbl_quantidade;
         
         /// <summary>
-        /// Controle dd_category.
+        /// Controle txt_quantidade_sms.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dd_category;
+        protected global::System.Web.UI.WebControls.TextBox txt_quantidade_sms;
         
         /// <summary>
         /// Controle btn_enviar.

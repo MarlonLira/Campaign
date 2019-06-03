@@ -81,7 +81,11 @@
                       <li class="nav-item">
                             <asp:LinkButton class="nav-link" ID="lb_perfil" runat="server"><i class="far fa-user"></i> Perfil </asp:LinkButton>
                       </li>
-                      <li class="nav-item dropdown">
+
+                        <li class="nav-item">
+                          <asp:LinkButton class="nav-link" ID="lbtn_sair" runat="server" Onclick="lbtn_sair_Click" ><i class="fas fa-cog"></i> Sair </asp:LinkButton>
+                        </li>
+                      <!--<li class="nav-item dropdown">
                         <a
                           class="nav-link dropdown-toggle"
                           href="#"
@@ -99,7 +103,8 @@
                           <a class="dropdown-item" href="#">Financeiro</a>
                           <a class="dropdown-item" href="#">Customize</a>
                         </div>
-                      </li>
+                      </li> -->
+                        
                     </ul>
                   </div>
                 </div>

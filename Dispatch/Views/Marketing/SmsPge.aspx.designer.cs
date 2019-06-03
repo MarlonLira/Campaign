@@ -7,10 +7,28 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace Dispatch {
+namespace Dispatch.Views.Marketing {
     
     
-    public partial class InicioPge {
+    public partial class SmsPge {
+        
+        /// <summary>
+        /// Controle tmr_carga.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.Timer tmr_carga;
+        
+        /// <summary>
+        /// Controle tbl_control.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tbl_control;
         
         /// <summary>
         /// Controle lbl_erro.

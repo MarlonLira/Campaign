@@ -40,6 +40,24 @@ namespace Dispatch.Views.Marketing {
         protected global::System.Web.UI.WebControls.Button btn_carregar;
         
         /// <summary>
+        /// Controle pnl_control_category.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnl_control_category;
+        
+        /// <summary>
+        /// Controle dd_category.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dd_category;
+        
+        /// <summary>
         /// Controle pnl_control.
         /// </summary>
         /// <remarks>
@@ -83,14 +101,5 @@ namespace Dispatch.Views.Marketing {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_data_final;
-        
-        /// <summary>
-        /// Controle btn_testar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_testar;
     }
 }

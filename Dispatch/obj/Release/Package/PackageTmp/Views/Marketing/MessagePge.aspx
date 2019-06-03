@@ -25,21 +25,18 @@
                       <asp:Label ID="lbl_img" runat="server" Text="Link da Imagem" ForeColor="White"></asp:Label>
                       <asp:TextBox ID="txt_img" runat="server" class="form-control validate" required></asp:TextBox>
                   </div>
-                     <div class="form-group mb-3">
-                      <asp:Label ID="lbl_link" runat="server" Text="Link Redirecionado(Campanha)" ForeColor="White"></asp:Label>
-                      <asp:TextBox ID="txt_link" runat="server" class="form-control validate" required></asp:TextBox>
-                  </div>
-                  <div class="form-group mb-3">
-                    <asp:Label ID="lbl_category" runat="server" Text="Categoria" ForeColor="White"></asp:Label>
-                      <asp:Panel ID="pnl_control" runat="server">
-                          <asp:DropDownList ID="dd_category" runat="server" class="custom-select tm-select-accounts">
-                              <asp:ListItem Text="Selecione a Categoria"></asp:ListItem>
-                              <asp:ListItem Text="Email" Value="1"></asp:ListItem>
-                              <asp:ListItem Text="WhatsApp" Value="2"></asp:ListItem>
-                          </asp:DropDownList>
-                    </asp:Panel>
+                    <div class="form-group mb-3">
+                        <asp:Label ID="lbl_link" runat="server" Text="Link Redirecionado(Campanha)" ForeColor="White"></asp:Label>
+                        <asp:TextBox ID="txt_link" runat="server" class="form-control validate" required></asp:TextBox>
+                    </div>
 
-                  </div>
+                    <asp:Panel ID="pnl_number_sms" runat="server">
+                        <div class="form-group mb-3">
+                            <asp:Label ID="lbl_quantidade" runat="server" Text="Quantidade" ForeColor="White"></asp:Label>
+                            <asp:TextBox ID="txt_quantidade_sms" runat="server" class="form-control validate" required></asp:TextBox>
+                        </div>
+                    </asp:Panel>
+                  
                   </form>
               </div>
               <div class="col-12">

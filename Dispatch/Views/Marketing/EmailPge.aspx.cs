@@ -55,9 +55,19 @@ namespace Dispatch.Views.Marketing {
         }
 
         public void InitPage() {
+            Hlp Hlp = new Hlp();
+            TableRow[] Row;
+
             if ((String)Session["User"] != "ADMIN") {
                 pnl_control.Enabled = false;
                 dd_unidades.SelectedValue = (String)Session["User"];
+                pnl_control_category.Enabled = false;
+                dd_category.SelectedValue = "2";
+            }
+
+            if (Session["Table"] != null) {
+                Row = Hlp.TableLoad((DataTable)Session["Table"]);
+                tbl_control.Rows.AddRange(Row);
             }
         }
 
@@ -65,9 +75,10 @@ namespace Dispatch.Views.Marketing {
             try {
 
                 if (Session["Table"] != null) {
+                    Session.Add("Category", dd_category.Text);
                     Response.Redirect("~/Views/Marketing/MessagePge.aspx", false);
                 } else {
-
+                    
                 }
                 
             } catch (Exception Err) {

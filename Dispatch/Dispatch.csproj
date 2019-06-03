@@ -228,6 +228,7 @@
     <Content Include="Views\Marketing\EmailPge.aspx" />
     <Content Include="Views\Marketing\MessagePge.aspx" />
     <Content Include="Views\Marketing\PrevizualizarPge.aspx" />
+    <Content Include="Views\Marketing\SmsPge.aspx" />
     <Content Include="Views\Marketing\WaitingPge.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -253,6 +254,7 @@
     <Compile Include="Helpers\DbHelper.cs" />
     <Compile Include="Helpers\Hlp.cs" />
     <Compile Include="Helpers\SendMail.cs" />
+    <Compile Include="Helpers\SendSms.cs" />
     <Compile Include="Helpers\SendWhats.cs" />
     <Compile Include="InicioPge.aspx.cs">
       <DependentUpon>InicioPge.aspx</DependentUpon>
@@ -312,6 +314,13 @@
     </Compile>
     <Compile Include="Views\Marketing\PrevizualizarPge.aspx.designer.cs">
       <DependentUpon>PrevizualizarPge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marketing\SmsPge.aspx.cs">
+      <DependentUpon>SmsPge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Marketing\SmsPge.aspx.designer.cs">
+      <DependentUpon>SmsPge.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Marketing\WaitingPge.aspx.cs">
       <DependentUpon>WaitingPge.aspx</DependentUpon>

@@ -23,6 +23,18 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
           <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+              <h2 class="tm-block-title"> Tipo de Mensagem</h2>
+              <div class="tm-product-table-container">
+                <asp:Panel ID="pnl_control_category" runat="server">
+                    <asp:DropDownList ID="dd_category" runat="server" class="custom-select tm-select-accounts">
+                        <asp:ListItem Text="Selecione o Tipo" Value="0"></asp:ListItem>
+                        <asp:ListItem Text="Email" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="WhatsApp" Value="2"></asp:ListItem>
+                        <asp:ListItem Text="SMS" Value="3"></asp:ListItem>
+                    </asp:DropDownList>
+                </asp:Panel>
+            </div>
+              <br/>
             <h2 class="tm-block-title"> Filtro De Busca</h2>
               <!-- table container -->
               <asp:Panel ID="pnl_control" runat="server">
@@ -47,21 +59,22 @@
                     </div>
                 </asp:Panel>
               <!-- table container -->
-              <div class="tm-product-table-container">
-                <asp:DropDownList ID="dd_destinatario" runat="server" class="custom-select tm-select-accounts">
-                    <asp:ListItem Text ="ALUNO" class="tm-product-name"></asp:ListItem>
-                    <asp:ListItem Text ="VISITANTE" class="tm-product-name"></asp:ListItem>
-                </asp:DropDownList>
-            </div>
-              <h5 style="color:white;" class="col-auto"> Data Inicial</h5>
+                  <div class="tm-product-table-container">
+                    <asp:DropDownList ID="dd_destinatario" runat="server" class="custom-select tm-select-accounts">
+                        <asp:ListItem Text ="ALUNO" class="tm-product-name"></asp:ListItem>
+                        <asp:ListItem Text ="VISITANTE" class="tm-product-name"></asp:ListItem>
+                    </asp:DropDownList>
+                  </div>
+
+                  <h5 style="color:white;" class="col-auto"> Data Inicial</h5>
                   <div class="tm-product-table-container">
                       <asp:TextBox ID="txt_data_inicial" runat="server" TextMode="Date" class="form-control validate"></asp:TextBox>
                   </div>
-              <h5 style="color:white" class="col-auto"> Data Final</h5>
+                <h5 style="color:white" class="col-auto"> Data Final</h5>
                 <div class="tm-product-table-container">
                   <asp:TextBox ID="txt_data_final" runat="server" TextMode="Date" class="form-control validate"></asp:TextBox>
-                </div>
-              <asp:Button ID="btn_testar" class="btn btn-primary btn-block text-uppercase mb-3" runat="server" Text="Adicionar Filtro" visible="false"/>
+                </div>              
+               
           </div>
         </div>
       </div>
