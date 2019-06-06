@@ -17,6 +17,13 @@ namespace Dispatch.Views.Marketing {
         }
 
         public void InitPage() {
+
+            if (Session["quantidade_sms"] != null) {
+                if ((Int32)Session["quantidade_sms"] > 0) {
+                    txt_quantidade_sms.Text = Convert.ToString(Session["quantidade_sms"]);
+                }
+            }
+
             if (
                 (String)Session["User"] != "ADMIN" || 
                     (
@@ -45,10 +52,15 @@ namespace Dispatch.Views.Marketing {
                 txt_img.Visible = false;
                 lbl_link.Visible = false;
                 txt_link.Visible = false;
+                txt_description.Attributes.Add("maxlength", "110");
             }
 
             if (!((String)Session["Category"] == "SMS" || (String)Session["Category"] == "3")) {
                 pnl_number_sms.Visible = false;
+                pnl_list.Visible = false;
+                if (Session["Table"] == null) {
+                    pnl_list.Visible = false;
+                }
             }
         }
 
@@ -95,7 +107,15 @@ namespace Dispatch.Views.Marketing {
                     Session["Thread-New"] = true;
                     Session.Add("Texto", txt_description.Text);
                     Session["TableInit"] = null;
-                    Session.Add("quantidade_sms", Convert.ToInt32(txt_quantidade_sms.Text));
+                    Session.Add("IsSms", true);
+                    Session.Add("Enviados", 0);
+                    Session.Add("Falhas", 0);
+                    if (Session["Table"] != null) {
+                        Session.Add("quantidade_sms", Convert.ToInt32(txt_quantidade_sms.Text));
+                    }
+                    if (txt_list.Text != null && !String.IsNullOrEmpty(txt_list.Text)) {
+                        Session.Add("List", txt_list.Text);
+                    }
                     Response.Redirect("~/Views/Marketing/SmsPge.aspx", false);
                 }
 

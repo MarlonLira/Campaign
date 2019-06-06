@@ -37,7 +37,9 @@ namespace Dispatch.Views.Marketing {
 
                 Row = Hlp.TableLoad(Table);
                 tbl_control.Rows.AddRange(Row);
+                lbl_title_control.Text = " Qtd: " + Table.Rows.Count;
                 Session.Add("Table", Table);
+                Session.Add("quantidade_sms", Table.Rows.Count);
 
             } catch (Exception Err) {
 
@@ -77,8 +79,9 @@ namespace Dispatch.Views.Marketing {
                 if (Session["Table"] != null) {
                     Session.Add("Category", dd_category.Text);
                     Response.Redirect("~/Views/Marketing/MessagePge.aspx", false);
-                } else {
-                    
+                } else if(dd_category.Text == "3" || dd_category.Text == "SMS") {
+                    Session.Add("Category", dd_category.Text);
+                    Response.Redirect("~/Views/Marketing/MessagePge.aspx", false);
                 }
                 
             } catch (Exception Err) {
@@ -86,5 +89,9 @@ namespace Dispatch.Views.Marketing {
             }
         }
 
+        protected void btn_limpar_Click(object sender, EventArgs e) {
+            Session.Remove("Table");
+            Response.Redirect("~/Views/Marketing/EmailPge.aspx", false);
+        }
     }
 }

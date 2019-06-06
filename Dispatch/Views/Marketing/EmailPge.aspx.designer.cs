@@ -13,6 +13,15 @@ namespace Dispatch.Views.Marketing {
     public partial class EmailPge {
         
         /// <summary>
+        /// Controle lbl_title_control.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_title_control;
+        
+        /// <summary>
         /// Controle tbl_control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace Dispatch.Views.Marketing {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_carregar;
+        
+        /// <summary>
+        /// Controle btn_limpar.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_limpar;
         
         /// <summary>
         /// Controle pnl_control_category.

@@ -6,7 +6,7 @@
       <div class="row tm-content-row">
         <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
           <div class="tm-bg-primary-dark tm-block tm-block-products">
-              <h2 class="tm-block-title"> Tabela De Busca</h2>
+              <h2 class="tm-block-title"> Tabela De Busca - <asp:Label ID="lbl_title_control" runat="server" Text=" Qtd: 0"></asp:Label></h2>
               <!-- table container -->
                 <div class="tm-product-table-container">
                     <asp:Table ID="tbl_control" runat="server" class="table table-hover tm-table-small tm-product-table">
@@ -19,6 +19,7 @@
                 </div>
               <asp:Button ID="btn_enviar" runat="server" Text="Criar Mensagem" class="btn btn-primary btn-block text-uppercase mb-3"  OnClick="btn_enviar_Click"/>
               <asp:Button ID="btn_carregar" runat="server" Text="Carregar" class="btn btn-primary btn-block text-uppercase" OnClick="btn_carregar_Click" />
+              <asp:Button ID="btn_limpar" runat="server" Text="Limpar" class="btn btn-primary btn-block text-uppercase" OnClick="btn_limpar_Click" />
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">

@@ -2,7 +2,6 @@
 using System.Collections.Specialized;
 using System.Net;
 using System.Text;
-using System.Web.Script.Serialization;
 using Newtonsoft.Json.Linq;
 
 namespace Dispatch.Helpers {

@@ -19,8 +19,16 @@
                   </div>
                   <div class="form-group mb-3">
                       <asp:Label ID="lbl_description" runat="server" Text="Descrição" ForeColor="White"></asp:Label>
-                      <asp:TextBox ID="txt_description" runat="server" class="form-control validate" rows="3" required TextMode="MultiLine"></asp:TextBox>
+                      <asp:TextBox ID="txt_description" runat="server" class="form-control validate" rows="3" TextMode="MultiLine" MaxLength="110" required></asp:TextBox>
                   </div>
+                    <%if (Session["Table"] == null) {%>
+                    <asp:Panel ID="pnl_list" runat="server">
+                        <div class="form-group mb-3">
+                          <asp:Label ID="lbl_list" runat="server" Text="Lista de Envio" ForeColor="White"></asp:Label>
+                          <asp:TextBox ID="txt_list" runat="server" class="form-control validate" rows="3" TextMode="MultiLine"></asp:TextBox>
+                        </div>
+                    </asp:Panel>
+                    <%} %>
                      <div class="form-group mb-3">
                       <asp:Label ID="lbl_img" runat="server" Text="Link da Imagem" ForeColor="White"></asp:Label>
                       <asp:TextBox ID="txt_img" runat="server" class="form-control validate" required></asp:TextBox>
@@ -29,14 +37,14 @@
                         <asp:Label ID="lbl_link" runat="server" Text="Link Redirecionado(Campanha)" ForeColor="White"></asp:Label>
                         <asp:TextBox ID="txt_link" runat="server" class="form-control validate" required></asp:TextBox>
                     </div>
-
+                    <%if (Session["Table"] != null) {%>
                     <asp:Panel ID="pnl_number_sms" runat="server">
                         <div class="form-group mb-3">
                             <asp:Label ID="lbl_quantidade" runat="server" Text="Quantidade" ForeColor="White"></asp:Label>
-                            <asp:TextBox ID="txt_quantidade_sms" runat="server" class="form-control validate" required></asp:TextBox>
+                            <asp:TextBox ID="txt_quantidade_sms" runat="server" class="form-control validate" ></asp:TextBox>
                         </div>
                     </asp:Panel>
-                  
+                  <%} %>
                   </form>
               </div>
               <div class="col-12">
@@ -52,4 +60,8 @@
         </div>
       </div>
     </div>
+
 </asp:Content>
+
+
+

@@ -107,7 +107,6 @@ C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\Microsoft.AspNet.Telemet
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\pt-br\System.Web.Optimization.resources.dll
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.csprojAssemblyReference.cache
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CoreCompileInputs.cache
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.csproj.CopyComplete
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.dll
@@ -120,3 +119,4 @@ C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.dll
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.SqlServer.dll
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.xml
 C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\bin\EntityFramework.SqlServer.xml
+C:\Users\suporte\Desktop\Campaign\Campaign\Dispatch\obj\Debug\Dispatch.csprojAssemblyReference.cache

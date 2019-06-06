@@ -265,7 +265,7 @@ namespace Dispatch.Helpers {
                     Tel = "";
                 }
 
-                if (Tel.Length > 13 || Tel.Length < 13) { Tel = ""; }
+                if (Tel.Length > 11 || Tel.Length < 11) { Tel = ""; }
             }
 
             return Tel;
