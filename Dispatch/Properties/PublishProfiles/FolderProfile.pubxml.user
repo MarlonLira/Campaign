@@ -22,10 +22,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>06/03/2019 14:14:56</publishTime>
     </File>
     <File Include="bin/Dispatch.dll">
-      <publishTime>06/06/2019 18:00:02</publishTime>
+      <publishTime>06/07/2019 17:56:20</publishTime>
     </File>
     <File Include="bin/Dispatch.pdb">
-      <publishTime>06/06/2019 18:00:02</publishTime>
+      <publishTime>06/07/2019 17:56:20</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/03/2019 14:14:56</publishTime>
