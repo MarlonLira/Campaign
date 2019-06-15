@@ -19,6 +19,11 @@ namespace Dispatch {
 
             bundles.Add(new StyleBundle("~/bundles/Css").Include(
                             "~/Content/bootstrap.min.css",
+                            "~/Content/templatemo-style.css",
+                            "~/Content/fontawesome.min.css"
+                            ).IncludeDirectory("~/Content", ".css"));
+
+            bundles.Add(new StyleBundle("~/bundles/Template").Include(
                             "~/Content/templatemo-style.css"
                             ).IncludeDirectory("~/Content", ".css"));
 

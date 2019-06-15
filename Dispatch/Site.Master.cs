@@ -4,11 +4,11 @@ using System.Web.UI;
 namespace Dispatch {
     public partial class SiteMaster : MasterPage {
         protected void Page_Load(object sender, EventArgs e) {
-            if (Convert.ToBoolean(Session["IsUser"]) != true) {
+            /*if (Convert.ToBoolean(Session["IsUser"]) != true) {
                 if (Request.Url.AbsoluteUri.IndexOf("LoginPge", StringComparison.InvariantCultureIgnoreCase) < 0) {
                     Response.Redirect("~/LoginPge.aspx", false);
                 }
-            }
+            }*/
         }
 
         protected void lb_email_Click(object sender, EventArgs e) {

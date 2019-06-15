@@ -225,6 +225,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Marketing\ContactLeadsPge.aspx" />
     <Content Include="Views\Marketing\EmailPge.aspx" />
     <Content Include="Views\Marketing\MessagePge.aspx" />
     <Content Include="Views\Marketing\PrevizualizarPge.aspx" />
@@ -293,6 +294,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Marketing\ContactLeadsPge.aspx.cs">
+      <DependentUpon>ContactLeadsPge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Marketing\ContactLeadsPge.aspx.designer.cs">
+      <DependentUpon>ContactLeadsPge.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Marketing\EmailPge.aspx.cs">
       <DependentUpon>EmailPge.aspx</DependentUpon>
